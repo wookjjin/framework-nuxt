@@ -49,6 +49,12 @@ export default defineNuxtConfig({
   pwa: {
     /* PWA options */
   },
+  /* Tailwind Config */
+  tailwindcss: {
+    exposeConfig: true,
+    viewer: true,
+    // and more...
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
 })

@@ -1,12 +1,11 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
-  <div>
-    <NuxtPage />
-  </div>
+  <div />
 </template>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
