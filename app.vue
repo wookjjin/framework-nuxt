@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import './styles/main.scss'
 </script>
 
 <template>
-  <div>
+  <NuxtLayout name="default">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <style lang="scss" scoped>
