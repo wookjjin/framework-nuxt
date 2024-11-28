@@ -1,10 +1,14 @@
 // @use는 @tailwind 보다 먼저 선언
+// === Base === //
+@forward "~/styles/base/reset";
 // === Layout === //
 @use "~/styles/layout/wrapper" as *;
 @use "~/styles/layout/header" as *;
 
 // === Components === //
+@use "~/styles/components/form" as *;
 @use "~/styles/components/buttons" as *;
+@use "~/styles/components/textfield" as *;
 
 @tailwind base;
 @tailwind components;

@@ -4,18 +4,15 @@
 
 <template>
   <div class="">
-    <h1 class="text-24 bold  border-solid border-b border-gray-90 pb-1 mb-5">
+    <h1 class="text-2xl font-bold  border-solid border-b border-gray-90 pb-1 mb-5">
       Action Button
     </h1>
     <div class="p-3 mb-5 space-y-5">
       <div>
-        <h2 class="text-24 bold mb-2">
+        <h2 class="text-2xl font-bold mb-2">
           Primary Solid
         </h2>
         <div class="flex gap-3 w-full">
-          <button type="button" class="btn__full--primary-xs">
-            xs
-          </button>
           <button type="button" class="btn__full--primary-sm">
             sm
           </button>
@@ -34,13 +31,10 @@
         </div>
       </div>
       <div>
-        <h2 class="text-24 bold mb-2">
+        <h2 class="text-2xl font-bold mb-2">
           Secondary Solid
         </h2>
         <div class="flex gap-3 w-full">
-          <button type="button" class="btn__full--secondary-xs">
-            xs
-          </button>
           <button type="button" class="btn__full--secondary-sm">
             sm
           </button>
@@ -60,13 +54,10 @@
         </div>
       </div>
       <div>
-        <h2 class="text-24 bold mb-2">
+        <h2 class="text-2xl font-bold mb-2">
           Negative Line
         </h2>
         <div class="flex gap-3 w-full">
-          <button type="button" class="btn__line--negative-xs">
-            xs
-          </button>
           <button type="button" class="btn__line--negative-sm">
             sm
           </button>
