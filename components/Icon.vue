@@ -18,10 +18,8 @@ const props = defineProps({
     type: String,
   },
 })
-
 const imageSrc = computed(() => {
-  // return `${import.meta.env.VITE_ICON_SRC_PATH}/${props.name}.${props.extension}`
-  return `${props.name}`
+  return `/icon/${props.name}.${props.extension}`
 })
 </script>
 

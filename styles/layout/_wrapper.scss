@@ -29,11 +29,11 @@ body,
 
 .main {
   @apply flex flex-1 flex-col;
-  padding: var(--layout-padding);
   background-color: var(--color-gray-10);
   &__content {
     @apply flex flex-col justify-between flex-1;
     overflow-y: auto;
+    padding: var(--layout-padding);
   }
 }
 

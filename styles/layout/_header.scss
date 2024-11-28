@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "~/styles/helpers/mixins/index" as *;
+
+.header {
+  @apply flex items-center justify-between;
+  height: var(--layout-header-height);
+  padding: 0 20px;
+  background-color: var(--color-gray-30);
+  &__menu {
+    @include space(10px);
+  }
+}
