@@ -1,10 +1,10 @@
 // @use는 @tailwind 보다 먼저 선언
 // base
-@use "/styles/helpers/variables" as *;
-// layout
-@use "/styles/layout/wrapper" as *;
-// components
-@use "/styles/components/buttons" as *;
+// @use "~~/styles/helpers/variables" as *;
+// // layout
+@use "~/styles/layout/wrapper" as *;
+// // components
+@use "~/styles/components/buttons" as *;
 
 @tailwind base;
 @tailwind components;
