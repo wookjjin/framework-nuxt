@@ -3,13 +3,15 @@
 </script>
 
 <template>
-  <header>
-    <NuxtLink to="/">
-      Home
-    </NuxtLink>
-    <NuxtLink to="/examples">
-      Examples
-    </NuxtLink>
+  <header class="header">
+    <nav class="header__menu">
+      <NuxtLink to="/">
+        Home
+      </NuxtLink>
+      <NuxtLink to="/examples">
+        Examples
+      </NuxtLink>
+    </nav>
   </header>
 </template>
 

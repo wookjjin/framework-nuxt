@@ -1,9 +1,9 @@
 // @use는 @tailwind 보다 먼저 선언
-// base
-// @use "~~/styles/helpers/variables" as *;
-// // layout
+// === Layout === //
 @use "~/styles/layout/wrapper" as *;
-// // components
+@use "~/styles/layout/header" as *;
+
+// === Components === //
 @use "~/styles/components/buttons" as *;
 
 @tailwind base;
