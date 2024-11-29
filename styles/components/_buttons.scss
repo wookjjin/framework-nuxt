@@ -1,204 +1,211 @@
 @use "sass:map";
 @use "~/styles/helpers/mixins/index" as *;
-
 /* ========================== Variables ========================== */
-$button-size: (xs, sm, md, lg, xl);
-
-$button-height: (
-  xs: var(--form-height-xs),
-  sm: var(--form-height-sm),
-  md: var(--form-height-md),
-  lg: var(--form-height-lg),
-  xl: var(--form-height-xl),
-);
-
 $button-style: (
-  xs: (
-    min-width: 65px,
-    height: var(--form-height-xs),
-    padding: 0 15px,
-  ),
   sm: (
-    min-width: 65px,
+    min-width: 100px,
     height: var(--form-height-sm),
-    padding: 0 15px,
+    padding: 10px,
   ),
   md: (
-    min-width: 65px,
+    min-width: 120px,
     height: var(--form-height-md),
-    padding: 0 15px,
+    padding: 20px,
   ),
   lg: (
-    min-width: 70px,
+    min-width: 120px,
     height: var(--form-height-lg),
-    padding: 0 20px,
+    padding: 20px,
   ),
   xl: (
-    min-width: 70px,
+    min-width: 120px,
     height: var(--form-height-xl),
-    padding: 0 20px,
+    padding: 20px,
   ),
 );
 
-$button-colors: (
+$button-solid-colors: (
   primary: (
-    default: var(--color-primary-800),
-    hover: var(--color-primary-900),
+    text: var(--color-white),
+    default: var(--color-primary-850),
+    hover: var(--color-primary-800),
+    disabled: var(--color-gray-150)
   ),
   secondary: (
-    default: var(--color-secondary-800),
-    hover: var(--color-secondary-900),
+    text: var(--color-gray-600),
+    default: var(--color-gray-100),
+    hover: var(--color-primary-150),
+    disabled: var(--color-gray-10)
   ),
   negative: (
-    default: var(--color-gray-60),
-    hover: var(--color-gray-70),
+    text: var(--color-gray-500),
+    default: var(--color-gray-100),
+    hover: var(--color-primary-150),
+    disabled: var(--color-gray-10)
+  ),
+  white: (
+    text: var(--color-gray-500),
+    default: var(--color-white),
+    hover: var(--color-gray-50),
+    disabled: var(--color-gray-100),
+  ),
+  gray: (
+    text: var(--color-gray-500),
+    default: var(--color-gray-50),
+    hover: var(--color-gray-100),
+    disabled: var(--color-gray-200),
   ),
 );
-
+$button-line-colors: (
+  primary: (
+    text: var(--color-primary-850),
+    default: var(--color-primary-850),
+    hover: var(--color-primary-800),
+    disabled: var(--color-gray-150)
+  ),
+  secondary: (
+    text: var(--color-gray-500),
+    default: var(--color-gray-100),
+    hover: var(--color-primary-150),
+    disabled: var(--color-gray-10)
+  ),
+  negative: (
+    text: var(--color-gray-600),
+    default: var(--color-gray-400),
+    hover: var(--color-primary-700),
+    disabled: var(--color-gray-150)
+  ),
+  white: (
+    text: var(--color-gray-500),
+    default: var(--color-white),
+    hover: var(--color-white),
+    disabled: var(--color-white)
+  ),
+  gray: (
+    text: var(--color-gray-500),
+    default: var(--color-gray-50),
+    hover: var(--color-gray-100),
+    disabled: var(--color-gray-200),
+  ),
+);
 /* ========================== Mixins ========================== */
-@mixin btn($type: "full", $color: "primary") {
+@mixin btn-base($type: 'solid', $color: 'primary') {
   @apply flex justify-center items-center;
   @include btn-color($type: $type, $color: $color);
-
-  flex: 0 0 auto;
   width: max-content;
   border-radius: var(--radius-sm);
   cursor: pointer;
   white-space: nowrap;
   transition: var(--transition);
-
-  &:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-  }
-
-  & + button {
-    margin-left: 10px;
-  }
 }
 
 @mixin btn-color($type, $color) {
-  $color-map: map.get($button-colors, $color);
-  border: 1px solid map.get($color-map, default);
+  $solid-color-map: map.get($button-solid-colors, $color);
+  $line-color-map: map.get($button-line-colors, $color);
 
-  @if $type == "full" {
-    @include typo(var(--font-size-15), 500, var(--color-gray-0));
-    background-color: map.get($color-map, default);
-
-    &:hover:not(:disabled) {
-      border-color: map.get($color-map, default);
-      background-color: map.get($color-map, hover);
+  @if $type == 'full' {
+    @include typo(var(--font-size-14), 500, map.get($solid-color-map, text));
+    background-color: map.get($solid-color-map, default);
+    border: 1px solid map.get($solid-color-map, default);
+    &:hover:not(:disabled){
+      background-color: map.get($solid-color-map, hover);
+      border-color: map.get($solid-color-map, hover);
     }
-  } @else if $type == "line" {
-    @include typo(var(--font-size-15), 500, map.get($color-map, default));
-    background-color: var(--color-gray-0);
+    &:disabled {
+      background-color: map.get($solid-color-map, disabled);
+      border-color: map.get($solid-color-map, disabled);
+    }
+  } @else if $type == 'line' {
+    @include typo(var(--font-size-14), 500, map.get($line-color-map, text));
+    background-color: var(--color-white);
+    border: 1px solid map.get($line-color-map, default);
+    &:hover:not(:disabled){
+      border: 1px solid map.get($line-color-map, hover);
+      color: map.get($line-color-map, hover);
+      svg {
+        * {
+          stroke: map.get($line-color-map, hover);
+        }
+      }
+    }
+    &:disabled {
+      border-color: map.get($line-color-map, disabled);
+      color: map.get($line-color-map, disabled);
+    }
+  } @else if $type == 'full-line' {
+    @include typo(var(--font-size-14), 500, map.get($line-color-map, text));
+    background-color: var(--color-gray-30);
+    border: 1px solid var(--color-gray-100);
+    &:hover:not(:disabled){
+      background-color: var(--color-primary-150);
+      border: 1px solid var(--color-primary-300);
+      color: var(--color-primary-700);
+    }
+    &:disabled {
+      background-color: var(--color-gray-10);
+      border-color: var(--color-gray-30);
+      color: var(--color-gray-200);
+    }
+  } 
+}
 
-    &:hover:not(:disabled) {
-      border-color: map.get($color-map, hover);
-      color: map.get($color-map, hover);
+@mixin btn-size($size: 'md') {
+  $size-map: map.get($button-style, $size);
+  & {
+    height: map.get($size-map, height);
+    &:not(&.btn__icon) {
+      min-width: map.get($size-map, min-width);
+      padding: 0 map.get($size-map, padding);
+    }
+    &.btn__icon {
+      width: map.get($size-map, height);
+      padding: 0;
+      border: 0;
+    }
+  }
+  // 별도 스타일 추가 가능
+  @if $size == 'xl' {
+    & {
+      font-size: var(--font-size-16);
+      font-weight: 700;
+    }
+  }
+  @if $size == 'lg' {
+    & {
+      font-weight: 700;
     }
   }
 }
-
-@mixin btn-size($size: "md") {
-  @if $size == "xs" {
-    min-width: 65px;
-    height: map.get($button-height, $size);
-    padding: 0 8px;
-  } @else if $size == "sm" {
-    min-width: 65px;
-    height: map.get($button-height, $size);
-    padding: 0 10px;
-  } @else if $size == "md" {
-    min-width: 65px;
-    height: map.get($button-height, $size);
-    padding: 0 10px;
-  } @else if $size == "lg" {
-    min-width: 70px;
-    height: map.get($button-height, $size);
-    padding: 0 15px;
-  } @else if $size == "xl" {
-    @apply flex-1;
-    min-width: 70px;
-    width: 100%;
-    height: map.get($button-height, $size);
-    padding: 0 15px;
-    font-size: 16px; // 예외 사용
-  }
-
-  // 아이콘 버튼인 경우
-  &:has(.hide) {
-    padding: 0;
-    @if $size == "sm" {
-      min-width: var(--form-height-sm);
-      max-width: var(--form-height-sm);
-    } @else if $size == "md" {
-      min-width: var(--form-height-md);
-      max-width: var(--form-height-md);
-    } @else if $size == "lg" {
-      min-width: var(--form-height-lg);
-      max-width: var(--form-height-lg);
-    } @else if $size == "xl" {
-      min-width: var(--form-height-xl);
-      max-width: var(--form-height-xl);
-    }
-  }
-}
-
 /* ========================== Styles ========================== */
 .btn {
   &__full {
-    &--primary {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn;
+    @each $color in map.keys($button-solid-colors) {
+      @each $size in map.keys($button-style) {
+        &--#{"" + $color}-#{$size} {
+          @include btn-base($type: 'full', $color: $color);
           @include btn-size($size);
-        }
-      }
-    }
-
-    &--secondary {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn($color: "secondary");
-          @include btn-size($size);
-        }
-      }
-    }
-
-    &--negative {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn($color: "negative");
-          @include btn-size($size);
+          @if $color == secondary {
+            & {
+              border-color: var(--color-gray-150);
+              &:hover:not(:disabled){
+                border-color: var(--color-primary-300);
+              }
+              &:disabled {
+                border-color: var(--color-gray-30);
+                color: var(--color-gray-200);
+              }
+            }
+          }
         }
       }
     }
   }
 
   &__line {
-    &--primary {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn("line");
-          @include btn-size($size);
-        }
-      }
-    }
-
-    &--secondary {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn("line", "secondary");
-          @include btn-size($size);
-        }
-      }
-    }
-
-    &--negative {
-      @each $size in $button-size {
-        &-#{$size} {
-          @include btn("line", "negative");
+    @each $color in map.keys($button-solid-colors) {
+      @each $size in map.keys($button-style) {
+        &--#{"" + $color}-#{$size} {
+          @include btn-base($type: 'line', $color: $color);
           @include btn-size($size);
         }
       }

@@ -12,7 +12,7 @@ withDefaults(defineProps<IBasicInputProps>(), {
   minlength: undefined,
   maxlength: undefined,
   showCount: false,
-  clearable: false,
+  clearable: true,
   readonly: false,
   usePrefix: false,
   preIconName: '',
@@ -120,7 +120,7 @@ defineExpose({
         >
         <!-- input clear icon -->
         <div class="textfield__suffix-area">
-          <template v-if="inputValue && !disabled && !readonly">
+          <template v-if="inputValue && clearable && !disabled && !readonly">
             <button
               type="button"
               class="textfield__suffix-icon"
