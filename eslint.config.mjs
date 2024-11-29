@@ -16,4 +16,10 @@ export default withNuxt(
     },
   }),
   // ...your other rules
+  {
+    files: ['**/*.ts'],
+    rules: {
+      'node/prefer-global/process': 'off',
+    },
+  },
 )

@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/i18n',
     '@vite-pwa/nuxt',
+    '@nuxtjs/supabase',
   ],
   /* EsLint */
   eslint: {
@@ -42,6 +43,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiSecret: '',
     public: {
+      proxy: 'http://localhost:8080',
       apiBase: '/api',
     },
   },
@@ -55,9 +57,14 @@ export default defineNuxtConfig({
     viewer: true,
     // and more...
   },
+  /* Supabase */
+  supabase: {
+    url: process.env.SUPABASE_URL,
+    key: process.env.SUPABASE_KEY,
+    redirect: false,
+  },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-
   vite: {
     css: {
       preprocessorOptions: {
