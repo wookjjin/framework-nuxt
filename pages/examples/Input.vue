@@ -18,16 +18,16 @@ const textarea = ref('')
         input
       </h1>
       <div class="flex gap-3 w-full">
-        <cm-input v-model:input-value="input.default" type="text" label="size md" size="md" />
-        <cm-input v-model:input-value="input.default" type="text" label="size lg" size="lg" />
+        <ui-input v-model:input-value="input.default" type="text" label="size md" size="md" />
+        <ui-input v-model:input-value="input.default" type="text" label="size lg" size="lg" />
       </div>
       <div class="flex gap-3 w-full">
-        <cm-input v-model:input-value="input.default" type="text" label="input" />
-        <cm-input v-model:input-value="input.disabled" type="text" label="Disabled" disabled />
-        <cm-input v-model:input-value="input.readonly" type="text" label="Readonly" readonly />
-        <cm-input v-model:input-value="input.clearable" type="text" label="Clearable" :clearable="false" />
-        <cm-input v-model:input-value="input.value5" type="text" label="Count" show-count />
-        <!-- <cm-input
+        <ui-input v-model:input-value="input.default" type="text" label="input" />
+        <ui-input v-model:input-value="input.disabled" type="text" label="Disabled" disabled />
+        <ui-input v-model:input-value="input.readonly" type="text" label="Readonly" readonly />
+        <ui-input v-model:input-value="input.clearable" type="text" label="Clearable" :clearable="false" />
+        <ui-input v-model:input-value="input.value5" type="text" label="Count" show-count />
+        <!-- <ui-input
           v-model:input-value="input.value6"
           v-model:status="status"
           type="text"
@@ -41,7 +41,7 @@ const textarea = ref('')
         Password
       </h1>
       <div class="flex gap-3 w-full">
-        <cm-input v-model="password" type="password" placeholder="Password" use-password />
+        <ui-input v-model="password" type="password" placeholder="Password" use-password />
       </div>
     </div>
     <div class="mb-5">
@@ -49,7 +49,7 @@ const textarea = ref('')
         Textarea
       </h1>
       <div class="flex gap-3 w-full">
-        <cm-input v-model="textarea" type="textarea" placeholder="Textarea" clearable />
+        <ui-input v-model="textarea" type="textarea" placeholder="Textarea" clearable />
       </div>
     </div>
   </div>
