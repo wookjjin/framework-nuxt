@@ -24,6 +24,8 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@vite-pwa/nuxt',
     '@nuxtjs/supabase',
+    '@nuxtjs/color-mode',
+    'shadcn-nuxt',
   ],
   /* EsLint */
   eslint: {
@@ -62,6 +64,18 @@ export default defineNuxtConfig({
     url: process.env.SUPABASE_URL,
     key: process.env.SUPABASE_KEY,
     redirect: false,
+  },
+  /* Shadcn */
+  shadcn: {
+    /**
+     * Prefix for all the imported component
+     */
+    prefix: '',
+    /**
+     * Directory that the component lives in.
+     * @default "./components/ui"
+     */
+    componentDir: './components/ui',
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
