@@ -1,3 +1,4 @@
+import Aura from '@primevue/themes/aura'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -25,7 +26,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@nuxtjs/supabase',
     '@nuxtjs/color-mode',
-    'shadcn-nuxt',
+    '@primevue/nuxt-module',
   ],
   /* EsLint */
   eslint: {
@@ -65,17 +66,14 @@ export default defineNuxtConfig({
     key: process.env.SUPABASE_KEY,
     redirect: false,
   },
-  /* Shadcn */
-  shadcn: {
-    /**
-     * Prefix for all the imported component
-     */
-    prefix: '',
-    /**
-     * Directory that the component lives in.
-     * @default "./components/ui"
-     */
-    componentDir: './components/ui',
+  /* PrimeVue */
+  primevue: {
+    autoImport: true,
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },

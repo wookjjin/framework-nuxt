@@ -14,6 +14,10 @@ const exampleList = [
     title: 'Button',
     target: 'button',
   },
+  {
+    title: 'Select',
+    target: 'select',
+  },
 ]
 </script>
 
