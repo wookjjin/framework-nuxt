@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { IBasicInputProps } from '~/types'
 
-withDefaults(defineProps<IBasicInputProps>(), {
+const props = withDefaults(defineProps<IBasicInputProps>(), {
   type: 'text',
   label: '',
   placeholder: '',
@@ -45,7 +45,13 @@ const status = defineModel<'success' | 'error' | ''>('status', {
 const inputInst = ref<HTMLInputElement>()
 const showPassword = ref(false)
 const onInput = (e: Event) => {
-  inputValue.value = (e.target as HTMLInputElement).value
+  const element = e.target as HTMLInputElement
+  if (props.maxlength && element.value.length > Number(props.maxlength)) {
+    element.value = element.value.slice(0, Number(props.maxlength))
+    return
+  }
+
+  inputValue.value = element.value
   if (validMessage.value) {
     validMessage.value = ''
     status.value = ''
