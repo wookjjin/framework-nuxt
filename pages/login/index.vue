@@ -3,9 +3,9 @@ const supabase = useSupabaseClient()
 
 const signInWithOAuth = async () => {
   const { error } = await supabase.auth.signInWithOAuth({
-    provider: 'github',
+    provider: 'google',
     options: {
-      redirectTo: 'http://localhost:3000/confirm',
+      redirectTo: 'http://localhost:3000',
     },
   })
   if (error)

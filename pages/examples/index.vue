@@ -18,6 +18,10 @@ const exampleList = [
     title: 'Select',
     target: 'select',
   },
+  {
+    title: 'DataTable',
+    target: 'datatable',
+  },
 ]
 </script>
 
