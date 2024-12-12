@@ -68,6 +68,9 @@ export default defineNuxtConfig({
   },
   /* PrimeVue */
   primevue: {
+    components: {
+      include: ['Select'],
+    },
     autoImport: true,
     options: {
       theme: {
