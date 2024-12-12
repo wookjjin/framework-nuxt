@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       titleTemplate: '%s',
     },
   },
+
   /* Environment Override */
   /* https://github.com/unjs/c12?tab=readme-ov-file#environment-specific-configuration */
   $development: {
@@ -68,10 +69,6 @@ export default defineNuxtConfig({
   },
   /* PrimeVue */
   primevue: {
-    components: {
-      include: ['Select'],
-    },
-    autoImport: true,
     options: {
       theme: {
         preset: Aura,
