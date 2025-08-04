@@ -1,5 +1,10 @@
+import alert from '~/theme/alert'
+
 export default defineAppConfig({
   theme: {
-    primaryColor: '#ababab'
-  }
+    primaryColor: '#ababab',
+  },
+  ui: {
+    alert: alert(),
+  },
 })

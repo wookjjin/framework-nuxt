@@ -17,6 +17,9 @@ export default defineNuxtConfig({
     'pinia-plugin-persistedstate',
   ],
   css: ['~/assets/css/main.css'],
+  icon: {
+    componentName: 'NuxtIcon',
+  },
   vite: {
     plugins: [
       tailwindcss(),
