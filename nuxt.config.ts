@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     '@pinia/nuxt',
     'pinia-plugin-persistedstate',
+    '@tresjs/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   icon: {
@@ -39,5 +40,9 @@ export default defineNuxtConfig({
       { code: 'ko', language: 'ko-KR' },
     ],
     defaultLocale: 'ko',
+  },
+  tres: {
+    devtools: true,
+    glsl: true,
   },
 })
