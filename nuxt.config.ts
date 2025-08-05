@@ -19,8 +19,10 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
   icon: {
-    componentName: 'NuxtIcon',
   },
+  components: [
+    { path: '~/components/layouts', pathPrefix: false },
+  ],
   vite: {
     plugins: [
       tailwindcss(),
