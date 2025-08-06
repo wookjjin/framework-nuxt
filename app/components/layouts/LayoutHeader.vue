@@ -63,8 +63,6 @@ const items = ref<NavigationMenuItem[][]>([
       label: 'Components',
       icon: 'i-lucide-box',
       to: '/components',
-      active: true,
-      defaultOpen: true,
       children: [
         {
           label: 'Link',
@@ -128,14 +126,14 @@ const items = ref<NavigationMenuItem[][]>([
     >
       <div class="lg:flex-1 flex items-center gap-1.5 min-w-0">
         <NuxtLink to="/" class="flex gap-2 items-end cursor-pointer">
-          <UIcon name="i-lucide-cherry" class="size-8" />
+          <UIcon name="i-lucide-cherry" class="size-8 text-muted" />
         </NuxtLink>
       </div>
       <div class="hidden lg:flex">
         <UNavigationMenu arrow :items="items" class="w-full justify-center" />
       </div>
       <div class="flex items-center justify-end lg:flex-1 gap-1.5">
-        c
+        <ColorMode />
       </div>
     </div>
   </header>

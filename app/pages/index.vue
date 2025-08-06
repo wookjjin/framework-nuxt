@@ -5,7 +5,9 @@ definePageMeta({
 </script>
 
 <template>
-  <div />
+  <div>
+    index
+  </div>
 </template>
 
 <style scoped>

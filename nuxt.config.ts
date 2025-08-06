@@ -22,6 +22,7 @@ export default defineNuxtConfig({
   },
   components: [
     { path: '~/components/layouts', pathPrefix: false },
+    { path: '~/components', pathPrefix: true },
   ],
   vite: {
     plugins: [

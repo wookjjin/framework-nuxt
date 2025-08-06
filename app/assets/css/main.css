@@ -1,8 +1,10 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@import "~/assets/css/transitions.css";
 :root {
   --bg-white: #fff;
   --header-height: calc(var(--spacing) * 16);
   --header-container: 90rem;
 }
+

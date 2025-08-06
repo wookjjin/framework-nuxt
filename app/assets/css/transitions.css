@@ -1,0 +1,109 @@
+
+/* 기본 트랜지션 변수 */
+:root {
+  --transition-duration-fast: 0.2s;
+  --transition-duration-normal: 0.3s;
+  --transition-duration-slow: 0.5s;
+  --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 모든 요소에 기본 색상 트랜지션 적용 */
+*,
+*::before,
+*::after {
+  transition: 
+    background-color var(--transition-duration-normal) var(--transition-timing),
+    border-color var(--transition-duration-normal) var(--transition-timing),
+    color var(--transition-duration-normal) var(--transition-timing),
+    fill var(--transition-duration-normal) var(--transition-timing),
+    stroke var(--transition-duration-normal) var(--transition-timing),
+    box-shadow var(--transition-duration-normal) var(--transition-timing);
+}
+
+/* View Transitions API 기본 스타일 */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: var(--transition-duration-slow);
+  animation-timing-function: var(--transition-timing);
+}
+
+/* 페이드 애니메이션 */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* 슬라이드 애니메이션 */
+@keyframes slide-from-right {
+  from { transform: translateX(30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-to-left {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-30px); opacity: 0; }
+}
+
+/* 원형 확산 애니메이션 */
+@keyframes circle-expand {
+  0% {
+    clip-path: circle(0% at var(--click-x, 50%) var(--click-y, 50%));
+  }
+  100% {
+    clip-path: circle(150% at var(--click-x, 50%) var(--click-y, 50%));
+  }
+}
+
+@keyframes circle-contract {
+  0% {
+    clip-path: circle(150% at var(--click-x, 50%) var(--click-y, 50%));
+  }
+  100% {
+    clip-path: circle(0% at var(--click-x, 50%) var(--click-y, 50%));
+  }
+}
+
+/* 다양한 View Transition 스타일 클래스 */
+.fade-transition::view-transition-old(root) {
+  animation-name: fade-out;
+}
+
+.fade-transition::view-transition-new(root) {
+  animation-name: fade-in;
+}
+
+.slide-transition::view-transition-old(root) {
+  animation-name: slide-to-left;
+}
+
+.slide-transition::view-transition-new(root) {
+  animation-name: slide-from-right;
+}
+.circle-transition::view-transition-old(root) {
+  animation-name: circle-contract;
+}
+
+.circle-transition::view-transition-new(root) {
+  animation-name: circle-expand;
+}
+
+/* 성능 최적화 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none !important;
+  }
+}

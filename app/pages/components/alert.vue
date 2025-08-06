@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <UAlert title="Alert" description="This is an alert" color="error" />
+  <div>
+    <UAlert title="Alert" description="This is an alert" color="error" />
+  </div>
 </template>
 
 <style>
