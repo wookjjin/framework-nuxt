@@ -2,5 +2,13 @@
   --bg-white: #fff;
   --header-height: calc(var(--spacing) * 16);
   --header-container: 90rem;
+  --container: 90rem;
+
+  --ui-primary: var(--color-mint-500);
+  --ui-secondary: var(--color-sky-500);
+  --ui-success: var(--color-mint-500);
+  --ui-info: var(--color-sky-500);
+  --ui-warning: var(--color-amber-500);
+  --ui-error: var(--color-orange-700);
 }
 

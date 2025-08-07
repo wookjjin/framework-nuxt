@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "~/assets/css/theme.css";
 @import "@nuxt/ui";
 
 @import "~/assets/css/base.css";
