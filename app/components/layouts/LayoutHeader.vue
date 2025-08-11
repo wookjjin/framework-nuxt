@@ -125,12 +125,22 @@ const items = ref<NavigationMenuItem[][]>([
       class="w-full max-w-[var(--header-container)] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 h-full"
     >
       <div class="lg:flex-1 flex items-center gap-1.5 min-w-0">
-        <NuxtLink to="/" class="flex gap-2 items-end cursor-pointer">
-          <UIcon name="i-lucide-cherry" class="size-8 text-muted" />
+        <NuxtLink
+          to="/"
+          class="flex gap-2 items-end cursor-pointer"
+        >
+          <UIcon
+            name="i-lucide-cherry"
+            class="size-8 text-muted"
+          />
         </NuxtLink>
       </div>
       <div class="hidden lg:flex">
-        <UNavigationMenu arrow :items="items" class="w-full justify-center" />
+        <UNavigationMenu
+          arrow
+          :items="items"
+          class="w-full justify-center"
+        />
       </div>
       <div class="flex items-center justify-end lg:flex-1 gap-1.5">
         <ColorMode />

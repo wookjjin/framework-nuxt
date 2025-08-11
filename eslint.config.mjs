@@ -12,6 +12,19 @@ export default withNuxt(
     },
     vue: {
       // ..vue rules
+      overrides: {
+        'vue/max-attributes-per-line': [
+          'error',
+          {
+            singleline: {
+              max: 1,
+            },
+            multiline: {
+              max: 1,
+            },
+          },
+        ],
+      },
     },
     typescript: {
       // ..typescript rules
