@@ -22,6 +22,7 @@ const { label = 'Button', color = 'primary', activeColor, variant = 'solid', siz
 <template>
   <div>
     <UButton
+      class="cursor-pointer"
       :color="color"
       :active-color="activeColor"
       :variant="variant"

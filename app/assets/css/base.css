@@ -5,7 +5,7 @@
   --container: 90rem;
 
   --ui-primary: var(--color-mint-500);
-  --ui-secondary: var(--color-sky-500);
+  --ui-secondary: #607D8B;
   --ui-success: var(--color-mint-500);
   --ui-info: var(--color-sky-500);
   --ui-warning: var(--color-amber-500);
