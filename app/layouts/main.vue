@@ -118,14 +118,121 @@ const textArray = ref([
         class="relative isolate bg-gradient-to-b border-t border-default from-muted dark:from-muted/40 to-default"
       >
         <div
-          class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:grid py-16 sm:py-24 lg:py-32 gap-8 sm:gap-16"
-        />
+          class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-12 lg:gap-16"
+        >
+          <!-- Left Side -->
+          <div>
+            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Build Smarter, <br>Scale Faster
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+              Nuxt를 기반으로 한 새로운 프레임워크. 생산성과 확장성을 동시에 고려하여,
+              개발자가 더 적은 노력으로 더 많은 가치를 만들 수 있도록 설계되었습니다.
+            </p>
+
+            <div class="relative overflow-hidden">
+              <!-- 로고 자리 -->
+              <div
+                class="group relative flex items-center overflow-hidden gap-(--gap) [--gap:--spacing(16)] [--duration:20s] before:absolute before:pointer-events-none before:content-[&quot;&quot;] before:z-2 before:from-default before:to-transparent after:absolute after:pointer-events-none after:content-[&quot;&quot;] after:z-2 after:from-default after:to-transparent flex-row before:inset-y-0 before:left-0 before:h-full before:w-1/3 before:bg-gradient-to-r after:inset-y-0 after:right-0 after:h-full after:w-1/3 after:bg-gradient-to-l backface-hidden mt-6"
+              >
+                <div class="flex animate-marquee space-x-12">
+                  <div
+                    v-for="n in 6"
+                    :key="`logo1-${n}`"
+                    class="h-12"
+                  >
+                    {{ n }}
+                  </div>
+                  <div
+                    v-for="n in 6"
+                    :key="`logo1-${n}`"
+                    class="h-12"
+                  >
+                    {{ n }}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ui-button
+              label="View All Updates"
+              color="neutral"
+              class="flex items-center"
+            >
+              <span class="text-lg font-semibold pb-0.5">→</span>
+            </ui-button>
+          </div>
+
+          <!-- Right Side - Card with Updates -->
+          <div class="bg-gray-50 rounded-2xl p-8 space-y-8 shadow-sm">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">
+              Recent Updates
+            </h2>
+            <div class="flex gap-4">
+              <div class="w-13 h-13 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="text-xl">🚀</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Dark Mode Support Added
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                  사용자 선호에 따른 다크 모드를 지원합니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-13 h-13 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="text-xl">🔄</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  TypeScript Integration
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                  타입 안정성과 개발 경험이 크게 향상되었습니다.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="w-13 h-13 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
+                <span class="text-xl">🏢</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Performance Optimization
+                </h3>
+                <p class="text-gray-600 leading-relaxed">
+                  코어 엔진 최적화로 응답 속도가 40% 향상되었습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <LayoutFooter />
   </div>
 </template>
 
-<style>
+<style scoped>
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
 
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  /* 내용 크기만큼 */
+  animation: marquee 20s linear infinite;
+  /* 속도 조절 가능 */
+}
 </style>

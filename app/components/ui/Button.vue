@@ -38,6 +38,7 @@ const { label = 'Button', color = 'primary', activeColor, variant = 'solid', siz
       :ui="ui"
     >
       {{ label }}
+      <slot />
     </UButton>
   </div>
 </template>

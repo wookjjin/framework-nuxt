@@ -54,7 +54,10 @@ const toggleWithCircleAnimation = (event: MouseEvent) => toggleWithAnimation(eve
 <template>
   <ClientOnly v-if="!colorMode?.forced">
     <UButton
-      :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'" color="neutral" variant="ghost" class="theme-toggle-btn"
+      :icon="isDark ? 'i-lucide-moon' : 'i-lucide-sun'"
+      color="neutral"
+      variant="ghost"
+      class="theme-toggle-btn"
       @click="toggleWithCircleAnimation"
     />
     <template #fallback>

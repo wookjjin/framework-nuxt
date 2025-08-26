@@ -6,6 +6,7 @@ const items = ref<NavigationMenuItem[][]>([
     {
       label: 'Guide',
       icon: 'i-lucide-book-open',
+      to: '/getting-started',
       children: [
         {
           label: 'Introduction',
@@ -142,7 +143,7 @@ const items = ref<NavigationMenuItem[][]>([
           class="w-full justify-center"
         />
       </div>
-      <div class="flex items-center justify-end lg:flex-1 gap-1.5">
+      <div class="flex items-center justify-end cursor-pointer lg:flex-1 gap-1.5">
         <ColorMode />
       </div>
     </div>
