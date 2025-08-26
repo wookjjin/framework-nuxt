@@ -1,23 +1,30 @@
 <script lang="ts" setup>
 import type { NavigationMenuItem } from '@nuxt/ui'
 
+// const route = useRoute()
 const items = ref<NavigationMenuItem[][]>([
   [
     {
+      label: 'Docs',
+      icon: 'i-lucide-library',
+      to: '/docs',
+    },
+    {
       label: 'Guide',
       icon: 'i-lucide-book-open',
-      to: '/getting-started',
       children: [
-        {
-          label: 'Introduction',
-          description: 'Fully styled and customizable components for Nuxt.',
-          icon: 'i-lucide-house',
-        },
-        {
-          label: 'Installation',
-          description: 'Learn how to install and configure Nuxt UI in your application.',
-          icon: 'i-lucide-cloud-download',
-        },
+        // {
+        //   label: 'Introduction',
+        //   description: 'Fully styled and customizable components for Nuxt.',
+        //   icon: 'i-lucide-house',
+        //   to: '/docs/introduction',
+        // },
+        // {
+        //   label: 'Installation',
+        //   description: 'Learn how to install and configure Nuxt UI in your application.',
+        //   icon: 'i-lucide-cloud-download',
+        //   to: '/docs/installation',
+        // },
         {
           label: 'Icons',
           icon: 'i-lucide-smile',
@@ -37,69 +44,15 @@ const items = ref<NavigationMenuItem[][]>([
       ],
     },
     {
-      label: 'Composables',
-      icon: 'i-lucide-database',
-      children: [
-        {
-          label: 'defineShortcuts',
-          icon: 'i-lucide-file-text',
-          description: 'Define shortcuts for your application.',
-          to: '/composables/define-shortcuts',
-        },
-        {
-          label: 'useOverlay',
-          icon: 'i-lucide-file-text',
-          description: 'Display a modal/slideover within your application.',
-          to: '/composables/use-overlay',
-        },
-        {
-          label: 'useToast',
-          icon: 'i-lucide-file-text',
-          description: 'Display a toast within your application.',
-          to: '/composables/use-toast',
-        },
-      ],
-    },
-    {
       label: 'Components',
       icon: 'i-lucide-box',
       to: '/components',
       children: [
         {
-          label: 'Link',
-          icon: 'i-lucide-file-text',
-          description: 'Use NuxtLink with superpowers.',
-          to: '/components/link',
-        },
-        {
-          label: 'Modal',
-          icon: 'i-lucide-file-text',
-          description: 'Display a modal within your application.',
-          to: '/components/modal',
-        },
-        {
-          label: 'NavigationMenu',
-          icon: 'i-lucide-file-text',
-          description: 'Display a list of links.',
-          to: '/components/navigation-menu',
-        },
-        {
-          label: 'Pagination',
-          icon: 'i-lucide-file-text',
-          description: 'Display a list of pages.',
-          to: '/components/pagination',
-        },
-        {
-          label: 'Popover',
-          icon: 'i-lucide-file-text',
-          description: 'Display a non-modal dialog that floats around a trigger element.',
-          to: '/components/popover',
-        },
-        {
-          label: 'Progress',
-          icon: 'i-lucide-file-text',
-          description: 'Show a horizontal bar to indicate task progression.',
-          to: '/components/progress',
+          label: 'Tres',
+          icon: 'i-lucide-hexagon',
+          description: 'Create awesome 3D Components.',
+          to: '/components/tres',
         },
       ],
     },
