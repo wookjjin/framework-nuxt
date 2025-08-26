@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 const textArray = ref([
   'Building the future, one component at a time...',
-  '코드를 예술로 만드는 여정에 함께하세요.',
-  'Your ideas, powered by My Framework.',
-  '개발을 더 쉽고, 더 빠르게.',
-  'From concept to deployment, effortlessly.',
+  '코드를 예술로 바꾸는 여정에 동참하세요.',
+  'Your ideas, driven by My Framework.  ',
+  '더 쉽고 빠르게 개발하세요.',
+  'From concept to deployment with ease.',
 ])
 </script>
 
@@ -34,16 +34,9 @@ const textArray = ref([
               </h1>
               <div class="text-lg sm:text-xl/8 text-muted text-pretty mt-6">
                 <div>
-                  <!-- "Modern web development framework
-                  built with Vue.js and Nuxt.js.
-                  Featuring reusable components,
-                  TypeScript support, and scalable
-                  architecture for enterprise-ready
-                  applications." -->
-                  "Crafted with passion and precision, this framework showcases modern web development practices. From
-                  component architecture to deployment strategies, explore how thoughtful design meets powerful
-                  functionality.
-                  "
+                  "Built with passion and attention to detail, this framework highlights the best of modern web
+                  development. Dive into its component architecture and deployment strategies to see how deliberate
+                  design combines seamlessly with robust functionality.""
                 </div>
               </div>
             </div>
@@ -89,7 +82,9 @@ const textArray = ref([
             >
               <span class="text-3xl sm:text-4xl mb-3 sm:mb-4">🚀</span>
               <span class="text-lg sm:text-xl font-semibold text-gray-700 mb-2 sm:mb-3">Fast Setup</span>
-              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">간단한 설정만으로 바로 시작할 수 있습니다.</span>
+              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">
+                간단한 설정만으로 바로 시작할 수 있습니다.
+              </span>
             </div>
 
             <!-- 두 번째 카드 -->
@@ -98,8 +93,9 @@ const textArray = ref([
             >
               <span class="text-3xl sm:text-4xl mb-3 sm:mb-4">⚡</span>
               <span class="text-lg sm:text-xl font-semibold text-gray-700 mb-2 sm:mb-3">High Performance</span>
-              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">최적화된 성능으로 빠르고 매끄러운 사용자 경험을
-                제공합니다.</span>
+              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">
+                최상의 성능을 통해 빠르고 원활한 사용자 경험을 제공합니다.
+              </span>
             </div>
 
             <!-- 세 번째 카드 -->
@@ -108,8 +104,9 @@ const textArray = ref([
             >
               <span class="text-3xl sm:text-4xl mb-3 sm:mb-4">🔧</span>
               <span class="text-lg sm:text-xl font-semibold text-gray-700 mb-2 sm:mb-3">Easy Configuration</span>
-              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">유연한 옵션으로 원하는 방식대로 손쉽게
-                커스터마이징하세요.</span>
+              <span class="text-sm sm:text-base text-gray-600 leading-relaxed px-2">
+                유연한 옵션을 통해 원하는 방식으로 손쉽게 커스터마이징할 수 있습니다.
+              </span>
             </div>
           </div>
         </div>
@@ -123,11 +120,10 @@ const textArray = ref([
           <!-- Left Side -->
           <div>
             <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Build Smarter, <br>Scale Faster
+              Develop Intelligently,<br>Expand Rapidly
             </h2>
             <p class="text-lg text-gray-600 leading-relaxed mb-8">
-              Nuxt를 기반으로 한 새로운 프레임워크. 생산성과 확장성을 동시에 고려하여,
-              개발자가 더 적은 노력으로 더 많은 가치를 만들 수 있도록 설계되었습니다.
+              Nuxt를 기반으로 개발된 새로운 프레임워크로, 생산성과 확장성을 동시에 충족하는 것을 목표로 합니다. 개발자가 최소한의 노력으로 최대의 가치를 창출할 수 있도록 설계되었습니다.
             </p>
 
             <div class="relative overflow-hidden">
@@ -166,7 +162,7 @@ const textArray = ref([
           <!-- Right Side - Card with Updates -->
           <div class="bg-gray-50 rounded-2xl p-8 space-y-8 shadow-sm">
             <h2 class="text-3xl font-bold text-gray-800 mb-12">
-              Recent Updates
+              Recent Update
             </h2>
             <div class="flex gap-4">
               <div class="w-13 h-13 bg-white rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -177,7 +173,7 @@ const textArray = ref([
                   Dark Mode Support Added
                 </h3>
                 <p class="text-gray-600 leading-relaxed">
-                  사용자 선호에 따른 다크 모드를 지원합니다.
+                  다크 모드 지원 기능이 사용자 선호에 맞춰 제공됩니다.
                 </p>
               </div>
             </div>
@@ -191,7 +187,7 @@ const textArray = ref([
                   TypeScript Integration
                 </h3>
                 <p class="text-gray-600 leading-relaxed">
-                  타입 안정성과 개발 경험이 크게 향상되었습니다.
+                  타입 안정성이 개선되어 개발 경험이 크게 향상되었습니다.
                 </p>
               </div>
             </div>
@@ -205,7 +201,7 @@ const textArray = ref([
                   Performance Optimization
                 </h3>
                 <p class="text-gray-600 leading-relaxed">
-                  코어 엔진 최적화로 응답 속도가 40% 향상되었습니다.
+                  코어 엔진을 최적화하여 응답 속도가 40% 빨라졌습니다.
                 </p>
               </div>
             </div>
