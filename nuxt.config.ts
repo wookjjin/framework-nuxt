@@ -9,13 +9,16 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui',
     '@vueuse/nuxt',
     '@nuxtjs/i18n',
     '@vite-pwa/nuxt',
     '@pinia/nuxt',
     'pinia-plugin-persistedstate',
     '@tresjs/nuxt',
+    '@nuxt/content',
+    '@nuxt/ui-pro',
+    'nuxt-og-image',
+    'nuxt-llms',
   ],
   css: ['~/assets/css/main.css'],
   icon: {
@@ -47,5 +50,28 @@ export default defineNuxtConfig({
   tres: {
     devtools: true,
     glsl: true,
+  },
+  content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+    },
+    experimental: {
+      sqliteConnector: 'native',
+      nativeSqlite: true,
+    },
+  },
+  llms: {
+    domain: 'https://example.com',
+    title: 'Wuxt',
+    description: 'a Nuxt-based framework',
+    sections: [
+      {
+        title: 'Getting Started',
+        contentCollection: 'docs',
+        contentFilters: [
+          { field: 'path', operator: 'LIKE', value: '/docs/getting-started%' },
+        ],
+      },
+    ],
   },
 })

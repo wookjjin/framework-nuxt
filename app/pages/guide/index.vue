@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-    Docs index
-  </div>
+  <div />
 </template>
 
 <style>
