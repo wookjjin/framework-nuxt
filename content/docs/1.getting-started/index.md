@@ -8,10 +8,8 @@ This template is a ready-to-use documentation template made with [Nuxt UI](https
 
 There are already many websites based on this template:
 
-::card
-The content of the card
-::
-<!-- ::card-group
+
+::card-group
   :::card
   ---
   icon: i-simple-icons-nuxtdotjs
@@ -71,4 +69,4 @@ The content of the card
   ---
   The best place to manage your projects, environments and variables.
   :::
-:: -->
+::
