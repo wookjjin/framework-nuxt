@@ -59,14 +59,6 @@ const links = computed(() => {
       :description="page.description"
       :headline="headline"
     >
-      <template #links>
-        <UButton
-          v-for="(link, index) in page.links"
-          :key="index"
-          v-bind="link"
-        />
-        <PageHeaderLinks />
-      </template>
     </UPageHeader>
 
     <UPageBody>
