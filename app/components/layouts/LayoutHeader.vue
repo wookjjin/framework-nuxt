@@ -1,45 +1,21 @@
 <script lang="ts" setup>
 import type { NavigationMenuItem } from '@nuxt/ui'
 
-// const route = useRoute()
+const route = useRoute()
+
 const items = ref<NavigationMenuItem[][]>([
   [
     {
       label: 'Docs',
       icon: 'i-lucide-library',
       to: '/docs',
-    },
-    {
-      label: 'Guide',
-      icon: 'i-lucide-book-open',
+      active: route.path.startsWith('/docs/'),
       children: [
-        // {
-        //   label: 'Introduction',
-        //   description: 'Fully styled and customizable components for Nuxt.',
-        //   icon: 'i-lucide-house',
-        //   to: '/docs/introduction',
-        // },
-        // {
-        //   label: 'Installation',
-        //   description: 'Learn how to install and configure Nuxt UI in your application.',
-        //   icon: 'i-lucide-cloud-download',
-        //   to: '/docs/installation',
-        // },
         {
-          label: 'Icons',
-          icon: 'i-lucide-smile',
-          description: 'You have nothing to do, @nuxt/icon will handle it automatically.',
-        },
-        {
-          label: 'Colors',
-          icon: 'i-lucide-swatch-book',
-          description: 'Choose a primary and a neutral color from your Tailwind CSS theme.',
-        },
-        {
-          label: 'Theme',
-          icon: 'i-lucide-cog',
-          description:
-            'You can customize components by using the `class` / `ui` props or in your app.config.ts.',
+          label: 'Guide',
+          icon: 'i-lucide-book-open',
+          description: '',
+          to: '/docs/guide',
         },
       ],
     },
@@ -47,6 +23,7 @@ const items = ref<NavigationMenuItem[][]>([
       label: 'Components',
       icon: 'i-lucide-box',
       to: '/components',
+      active: route.path.startsWith('/components/'),
       children: [
         {
           label: 'Tres',
@@ -54,6 +31,14 @@ const items = ref<NavigationMenuItem[][]>([
           description: 'Create awesome 3D Components.',
           to: '/components/tres',
         },
+      ],
+    },
+    {
+      label: 'Examples',
+      icon: 'i-lucide-box',
+      to: '/examples',
+      active: route.path.startsWith('/examples/'),
+      children: [
       ],
     },
   ],
@@ -91,7 +76,6 @@ const items = ref<NavigationMenuItem[][]>([
       </div>
       <div class="hidden lg:flex">
         <UNavigationMenu
-          arrow
           :items="items"
           class="w-full justify-center"
         />

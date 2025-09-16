@@ -4,11 +4,38 @@
   --header-container: 90rem;
   --container: 90rem;
 
+  /* Semantic colors */
   --ui-primary: var(--color-mint-500);
-  --ui-secondary: #607D8B;
+  --ui-secondary: var(--color-slate-500);
   --ui-success: var(--color-mint-500);
   --ui-info: var(--color-sky-500);
   --ui-warning: var(--color-amber-500);
   --ui-error: var(--color-orange-700);
+
+  --ui-text-dimmed: var(--color-zinc-400);
+  --ui-text-muted: var(--color-zinc-500);
+  --ui-text-toned: var(--color-zinc-600);
+  --ui-text: var(--color-neutral-700);
+  --ui-text-highlighted: var(--color-neutral-900);
+  --ui-text-inverted: var(--color-white);
+
+  /* radius */
+  --ui-radius: 0.25rem;
 }
 
+.dark {
+  /* Semantic colors */
+  --ui-primary: var(--color-mint-400);
+  --ui-secondary: var(--color-slate-400);
+  --ui-success: var(--color-mint-400);
+  --ui-info: var(--color-sky-400);
+  --ui-warning: var(--color-amber-400);
+  --ui-error: var(--color-orange-800);
+
+  --ui-text-dimmed: var(--color-zinc-500);
+  --ui-text-muted: var(--color-zinc-400);
+  --ui-text-toned: var(--color-zinc-300);
+  --ui-text: var(--color-neutral-200);
+  --ui-text-highlighted: var(--color-white);
+  --ui-text-inverted: var(--color-neutral-900);
+}

@@ -3,7 +3,12 @@ import type { ContentNavigationItem } from '@nuxt/content'
 
 const route = useRoute()
 
-const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
+const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref<ContentNavigationItem[]>([]))
+const {
+  navigation: contentNavigation,
+  getActiveNavigationItem: _getActiveNavigationItem,
+  getCurrentBreadcrumbs: _getCurrentBreadcrumbs,
+} = useNavigation(navigation as Ref<ContentNavigationItem[]>)
 </script>
 
 <template>
@@ -17,7 +22,7 @@ const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
             <UPageAside>
               <UContentNavigation
                 :key="route.path"
-                :navigation="navigation"
+                :navigation="contentNavigation"
                 highlight
                 :ui="{
                   linkTrailingBadge: 'font-semibold uppercase',

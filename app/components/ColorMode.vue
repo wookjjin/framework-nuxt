@@ -66,6 +66,5 @@ const toggleWithCircleAnimation = (event: MouseEvent) => toggleWithAnimation(eve
   </ClientOnly>
 </template>
 
-<style scoped>
-
+<style>
 </style>

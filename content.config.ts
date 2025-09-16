@@ -3,10 +3,6 @@ import { z } from 'zod'
 
 export default defineContentConfig({
   collections: {
-    guide: defineCollection({
-      type: 'page',
-      source: 'guide/*.md',
-    }),
     docs: defineCollection({
       type: 'page',
       source: {

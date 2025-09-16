@@ -1,5 +1,6 @@
 import accordion from '~/theme/accordion'
 import alert from '~/theme/alert'
+import contentToc from '~/theme/contentToc'
 import navigationMenu from '~/theme/navigation'
 
 export default defineAppConfig({
@@ -9,12 +10,13 @@ export default defineAppConfig({
     alert: alert(),
     accordion: accordion(),
     navigationMenu: navigationMenu(),
+    contentToc: contentToc(),
   },
   toc: {
-    title: 'Table of Contents',
+    title: 'On this Page',
     bottom: {
       title: 'Community',
-      edit: 'aa',
+      edit: '#',
       links: [
         {
           icon: 'i-lucide-book-open',
