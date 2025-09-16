@@ -3,8 +3,22 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  nitro: {
+    prerender: {
+      routes: [
+        '/',
+      ],
+      crawlLinks: true,
+      autoSubfolderIndex: false,
+    },
+    routeRules: {
+      '/docs': { redirect: '/docs/getting-started' },
+    },
+  },
 
   modules: [
+    '@nuxt/ui',
+    '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/scripts',
@@ -15,13 +29,12 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate',
     '@tresjs/nuxt',
-    '@nuxt/content',
-    '@nuxt/ui-pro',
     'nuxt-og-image',
     'nuxt-llms',
   ],
   css: ['~/assets/css/main.css'],
   icon: {
+    provider: 'iconify',
   },
   components: [
     { path: '~/components/layouts', pathPrefix: false },
@@ -50,15 +63,6 @@ export default defineNuxtConfig({
   tres: {
     devtools: true,
     glsl: true,
-  },
-  content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    },
-    experimental: {
-      sqliteConnector: 'native',
-      nativeSqlite: true,
-    },
   },
   llms: {
     domain: 'https://example.com',

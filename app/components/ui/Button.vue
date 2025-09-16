@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { ActiveColorType, ButtonType, ColorType, SizeType, VariantType } from '~/types/common'
 
-const { label = 'Button', color = 'primary', activeColor, variant = 'solid', size = 'md', icon = '', to, trailingIcon = '', active = true, loading = false, type = 'button', loadingIcon = '', disabled = false, ui } = defineProps<{
+const { label , color = 'primary', activeColor, variant = 'solid', size = 'md', icon = '', to, trailingIcon = '', active = true, loading = false, type = 'button', loadingIcon = '', disabled = false, ui } = defineProps<{
   label?: string
   color?: ColorType
   activeColor?: ActiveColorType

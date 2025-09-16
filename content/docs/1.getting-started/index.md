@@ -8,7 +8,6 @@ This template is a ready-to-use documentation template made with [Nuxt UI](https
 
 There are already many websites based on this template:
 
-
 ::card-group
   :::card
   ---
