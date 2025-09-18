@@ -76,18 +76,24 @@ onUnmounted(() => {
 
 <template>
   <div class="typing-container">
-    <h1
-      class="main-title"
-      :class="{ 'dark-mode': isDark }"
-    >
-      <!-- 안녕하세요, 저는 -->
-      <span class="typing-text">{{ displayText }}</span>
-      <span
-        class="cursor"
-        :class="{ 'blink': showCursor, 'dark-mode': isDark }"
-      >|</span>
-      <!-- 입니다 -->
-    </h1>
+    <client-only>
+      <template #fallback>
+        <h1 class="main-title">
+          <span class="cursor">|</span>
+        </h1>
+      </template>
+
+      <h1
+        class="main-title"
+        :class="{ 'dark-mode': isDark }"
+      >
+        <span class="typing-text">{{ displayText }}</span>
+        <span
+          class="cursor"
+          :class="{ 'blink': showCursor, 'dark-mode': isDark }"
+        >|</span>
+      </h1>
+    </client-only>
   </div>
 </template>
 

@@ -7,10 +7,10 @@
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* 모든 요소에 기본 색상 트랜지션 적용 */
-*,
-*::before,
-*::after {
+/* Tailwind duration 클래스가 없는 요소에만 기본 트랜지션 적용 */
+*:not([class*="duration-"]),
+*:not([class*="duration-"])::before,
+*:not([class*="duration-"])::after {
   transition: 
     background-color var(--transition-duration-normal) var(--transition-timing),
     border-color var(--transition-duration-normal) var(--transition-timing),

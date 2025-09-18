@@ -58,8 +58,7 @@ const links = computed(() => {
       :title="page.title"
       :description="page.description"
       :headline="headline"
-    >
-    </UPageHeader>
+    />
 
     <UPageBody>
       <ContentRenderer
@@ -79,6 +78,9 @@ const links = computed(() => {
       <UContentToc
         :title="toc?.title"
         :links="page.body?.toc?.links"
+        highlight
+        highlight-color="primary"
+        color="primary"
       >
         <template
           v-if="toc?.bottom"
