@@ -28,7 +28,7 @@ const textArray = ref([
                 <div>
                   "Built with passion and attention to detail, this framework highlights the best of modern web
                   development. Dive into its component architecture and deployment strategies to see how deliberate
-                  design combines seamlessly with robust functionality.""
+                  design combines seamlessly with robust functionality.\
                 </div>
               </div>
             </div>
@@ -65,21 +65,5 @@ const textArray = ref([
 </template>
 
 <style scoped>
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  /* 내용 크기만큼 */
-  animation: marquee 20s linear infinite;
-  /* 속도 조절 가능 */
-}
 </style>

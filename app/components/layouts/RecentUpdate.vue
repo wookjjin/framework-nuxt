@@ -112,5 +112,21 @@
 </template>
 
 <style>
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
 
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  /* 내용 크기만큼 */
+  animation: marquee 20s linear infinite;
+  /* 속도 조절 가능 */
+}
 </style>

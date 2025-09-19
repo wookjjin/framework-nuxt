@@ -12,10 +12,22 @@ const items = ref<NavigationMenuItem[][]>([
       active: route.path.startsWith('/docs/'),
       children: [
         {
-          label: 'Guide',
+          label: 'Basics',
           icon: 'i-lucide-book-open',
-          description: '',
-          to: '/docs/guide',
+          description: 'Vue.js의 기초 개념과 주요 기능을 학습하세요',
+          to: '/docs/basics',
+        },
+        {
+          label: 'Intermediate',
+          icon: 'i-lucide-layers',
+          description: '컴포넌트 구조와 상태 관리와 같은 중급 수준의 기술을 심화하여 익히세요',
+          to: '/docs/intermediate',
+        },
+        {
+          label: 'Advanced',
+          icon: 'i-lucide-zap',
+          description: '고급 패턴과 성능 최적화 기법을 통해 전문성을 한층 더 향상시켜보세요',
+          to: '/docs/advanced',
         },
       ],
     },
