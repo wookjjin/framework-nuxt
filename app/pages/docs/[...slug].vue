@@ -31,7 +31,22 @@ useSeoMeta({
   ogDescription: description,
 })
 
-const headline = computed(() => findPageHeadline(navigation?.value, page.value?.path))
+const headline = computed(() => {
+  const currentPath = page.value?.path
+
+  const pathTitleMap = {
+    '/docs/getting-started': 'Getting Started',
+    '/docs/basics': 'Basics',
+    '/docs/intermediate': 'Intermediate',
+    '/docs/advanced': 'Advanced',
+  }
+
+  if (pathTitleMap[currentPath]) {
+    return pathTitleMap[currentPath]
+  }
+
+  return findPageHeadline(navigation?.value, currentPath) || 'Docs'
+})
 
 defineOgImageComponent('Docs', {
   headline: headline.value,
