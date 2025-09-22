@@ -34,15 +34,15 @@ useSeoMeta({
 const headline = computed(() => {
   const currentPath = page.value?.path
 
-  const pathTitleMap = {
+  const pathTitleMap: Record<string, string> = {
     '/docs/getting-started': 'Getting Started',
     '/docs/basics': 'Basics',
     '/docs/intermediate': 'Intermediate',
     '/docs/advanced': 'Advanced',
   }
 
-  if (pathTitleMap[currentPath]) {
-    return pathTitleMap[currentPath]
+  if (currentPath && currentPath in pathTitleMap) {
+    return pathTitleMap[currentPath as keyof typeof pathTitleMap]
   }
 
   return findPageHeadline(navigation?.value, currentPath) || 'Docs'

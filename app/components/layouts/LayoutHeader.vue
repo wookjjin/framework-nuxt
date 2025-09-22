@@ -12,6 +12,12 @@ const items = ref<NavigationMenuItem[][]>([
       active: route.path.startsWith('/docs/'),
       children: [
         {
+          label: 'Getting Started',
+          icon: 'i-lucide-square-play',
+          description: 'Framework 설치와 실행 방법, 그리고 프로젝트 구조에 대해 학습하세요',
+          to: '/docs/getting-started',
+        },
+        {
           label: 'Basics',
           icon: 'i-lucide-book-open',
           description: 'Vue.js의 기초 개념과 주요 기능을 학습하세요',

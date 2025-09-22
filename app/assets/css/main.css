@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@import "~/assets/css/theme.css";
 @import "@nuxt/ui";
+
+@import "~/assets/css/theme.css";
 
 @import "~/assets/css/font.css";
 @import "~/assets/css/base.css";
