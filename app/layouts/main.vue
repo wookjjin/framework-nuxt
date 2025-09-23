@@ -28,7 +28,7 @@ const textArray = ref([
                 <div>
                   "Built with passion and attention to detail, this framework highlights the best of modern web
                   development. Dive into its component architecture and deployment strategies to see how deliberate
-                  design combines seamlessly with robust functionality.\
+                  design combines seamlessly with robust functionality.
                 </div>
               </div>
             </div>
