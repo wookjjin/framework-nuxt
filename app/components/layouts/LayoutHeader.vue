@@ -77,32 +77,34 @@ const items = ref<NavigationMenuItem[][]>([
 </script>
 
 <template>
-  <header class="bg-default/75 backdrop-blur border-b border-default h-[var(--header-height)] sticky top-0 z-50">
-    <div
-      class="w-full max-w-[var(--header-container)] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3 h-full"
-    >
-      <div class="lg:flex-1 flex items-center gap-1.5 min-w-0">
-        <NuxtLink
-          to="/"
-          class="flex gap-2 items-end cursor-pointer"
-        >
-          <UIcon
-            name="i-lucide-cherry"
-            class="size-8 text-muted"
-          />
-        </NuxtLink>
-      </div>
-      <div class="hidden lg:flex">
-        <UNavigationMenu
-          :items="items"
-          class="w-full justify-center"
+  <UHeader>
+    <template #title>
+      <UIcon
+        name="i-lucide-cherry"
+        class="size-8 text-muted"
+      />
+    </template>
+
+    <UNavigationMenu :items="items" />
+
+    <template #right>
+      <ColorMode />
+
+      <UTooltip
+        text="Open on GitHub"
+      >
+        <!-- :kbds="['meta', 'G']" -->
+        <UiButton
+          color="neutral"
+          variant="ghost"
+          to="https://github.com/wookjjin/framework-nuxt"
+          target="_blank"
+          icon="i-simple-icons-github"
+          aria-label="GitHub"
         />
-      </div>
-      <div class="flex items-center justify-end cursor-pointer lg:flex-1 gap-1.5">
-        <ColorMode />
-      </div>
-    </div>
-  </header>
+      </UTooltip>
+    </template>
+  </UHeader>
 </template>
 
 <style></style>

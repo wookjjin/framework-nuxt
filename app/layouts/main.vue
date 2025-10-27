@@ -38,11 +38,13 @@ const textArray = ref([
                   <ui-button
                     label="Get Started"
                     size="xl"
+                    to="/docs/getting-started"
                   />
                   <ui-button
                     label="View Guide"
                     color="secondary"
                     size="xl"
+                    to="/docs/basics"
                   />
                 </div>
               </div>

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type { ActiveColorType, ButtonType, ColorType, SizeType, VariantType } from '~/types/common'
 
-const { label , color = 'primary', activeColor, variant = 'solid', size = 'md', icon = '', to, trailingIcon = '', active = true, loading = false, type = 'button', loadingIcon = '', disabled = false, ui } = defineProps<{
+const { label, color = 'primary', activeColor, variant = 'solid', size = 'md', icon = '', to, trailingIcon = '', active = true, loading = false, type = 'button', loadingIcon = '', disabled = false, ui, target, ariaLabel } = defineProps<{
   label?: string
   color?: ColorType
   activeColor?: ActiveColorType
@@ -15,7 +15,9 @@ const { label , color = 'primary', activeColor, variant = 'solid', size = 'md', 
   to?: string
   loadingIcon?: string
   disabled?: boolean
+  target?: string
   ui?: any
+  ariaLabel?: string
 }>()
 </script>
 
@@ -36,9 +38,13 @@ const { label , color = 'primary', activeColor, variant = 'solid', size = 'md', 
       :loading-icon="loadingIcon"
       :disabled="disabled"
       :ui="ui"
+      :target="target"
+      :aria-label="ariaLabel"
     >
-      {{ label }}
-      <slot />
+      <template v-if="label ">
+        {{ label }}
+      </template>
+      <slot v-if="$slots.default" />
     </UButton>
   </div>
 </template>
