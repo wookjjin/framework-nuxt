@@ -1,7 +1,28 @@
-<script lang="ts" setup>
+<script lang="ts">
 import type { AvatarProps } from '@nuxt/ui'
-import type { ColorType, InputType, InputVariantType, SizeType } from '~/types/common'
+import type { ColorType, SizeType } from '~/types/common'
 
+export type InputType = 'number' | 'color' | 'button' | 'checkbox' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | string & {}
+export type InputVariantType = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
+
+export interface InputProps {
+  type?: InputType
+  placeholder?: string
+  color?: ColorType
+  variant?: InputVariantType
+  size?: SizeType
+  icon?: string
+  avatar?: AvatarProps
+  loading?: boolean
+  loadingIcon?: string
+  disabled?: boolean
+  autocomplete?: string
+  autofocus?: boolean
+  highlight?: boolean
+}
+</script>
+
+<script lang="ts" setup>
 const {
   type = 'text',
   placeholder = 'input...',
@@ -16,21 +37,7 @@ const {
   autocomplete,
   autofocus,
   highlight,
-} = defineProps<{
-  type?: InputType
-  placeholder?: string
-  color?: ColorType
-  variant?: InputVariantType
-  size?: SizeType
-  icon?: string
-  avatar?: AvatarProps
-  loading?: boolean
-  loadingIcon?: string
-  disabled?: boolean
-  autocomplete?: string
-  autofocus?: boolean
-  highlight?: boolean
-}>()
+} = defineProps<InputProps>()
 
 const model = defineModel({ default: '' })
 </script>

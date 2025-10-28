@@ -1,6 +1,31 @@
-<script lang="ts" setup>
-import type { ActiveColorType, ButtonType, ColorType, SizeType, VariantType } from '~/types/common'
+<script lang="ts">
+import type { ColorType, SizeType } from '~/types/common'
 
+type ButtonType = 'submit' | 'reset' | 'button'
+type ActiveColorType = 'error' | 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'neutral'
+type ButtonVariantType = 'solid' | 'outline' | 'soft' | 'subtle' | 'ghost' | 'link' | undefined
+
+export interface ButtonProps {
+  label?: string
+  color?: ColorType
+  activeColor?: ActiveColorType
+  variant?: ButtonVariantType
+  size?: SizeType
+  icon?: string
+  trailingIcon?: string
+  active?: boolean
+  loading?: boolean
+  type?: ButtonType
+  to?: string
+  loadingIcon?: string
+  disabled?: boolean
+  target?: string
+  ui?: any
+  ariaLabel?: string
+}
+</script>
+
+<script lang="ts" setup>
 const {
   label,
   color = 'primary',
@@ -18,24 +43,7 @@ const {
   ui,
   target,
   ariaLabel,
-} = defineProps<{
-  label?: string
-  color?: ColorType
-  activeColor?: ActiveColorType
-  variant?: VariantType
-  size?: SizeType
-  icon?: string
-  trailingIcon?: string
-  active?: boolean
-  loading?: boolean
-  type?: ButtonType
-  to?: string
-  loadingIcon?: string
-  disabled?: boolean
-  target?: string
-  ui?: any
-  ariaLabel?: string
-}>()
+} = defineProps<ButtonProps>()
 </script>
 
 <template>
