@@ -13,6 +13,15 @@ export default withNuxt(
     vue: {
       // ..vue rules
       overrides: {
+        'object-curly-newline': [
+          'error',
+          {
+            ObjectPattern: {
+              multiline: true,
+              minProperties: 3,
+            },
+          },
+        ],
         'vue/max-attributes-per-line': [
           'error',
           {

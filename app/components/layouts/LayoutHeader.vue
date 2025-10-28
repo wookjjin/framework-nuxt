@@ -42,14 +42,6 @@ const items = ref<NavigationMenuItem[][]>([
       icon: 'i-lucide-box',
       to: '/components',
       active: route.path.startsWith('/components/'),
-      children: [
-        {
-          label: 'Tres',
-          icon: 'i-lucide-hexagon',
-          description: 'Create awesome 3D Components.',
-          to: '/components/tres',
-        },
-      ],
     },
     {
       label: 'Examples',
