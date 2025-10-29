@@ -18,7 +18,7 @@ async function onClick() {
           예를 들어 <span class="font-semibold">button, submit, reset</span> 타입은 각각 일반 버튼, 폼 제출, 입력 초기화 용도로 사용됩니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton
             label="Submit"
             type="submit"
@@ -50,7 +50,7 @@ async function onClick() {
           예를 들어 <span class="font-semibold">primary, success, warning, error</span>와 같은 테마 컬러는 사용자에게 명확한 피드백을 제공합니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton
             label="Primary"
             color="primary"
@@ -91,7 +91,7 @@ async function onClick() {
           <span class="font-semibold">solid, outline, soft, subtle, ghost, link</span> 등의 형태로 다양한 시각적 레벨을 연출할 수 있습니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton
             label="Solid"
             color="neutral"
@@ -133,7 +133,7 @@ async function onClick() {
           다양한 크기(<span class="font-semibold">sm, md, lg</span>) 옵션을 제공하여 화면 구성에 맞게 버튼을 조정할 수 있습니다.<br>
           작은 크기는 보조 액션에, 큰 크기는 주요 액션 버튼으로 활용하기 적합합니다.
         </p>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton
             label="Small"
             size="sm"
@@ -157,7 +157,7 @@ async function onClick() {
           버튼에 아이콘이나 아바타를 추가하여 시각적 힌트를 제공할 수 있습니다.<br>
           예를 들어 검색 아이콘, 전송 화살표, 사용자 프로필 이미지 등을 통해 버튼의 역할을 직관적으로 전달합니다.
         </p>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton icon="i-lucide-search" />
           <UiButton
             icon="i-lucide-mail"
@@ -185,7 +185,7 @@ async function onClick() {
           비동기 요청이나 처리 중에는 <span class="font-semibold">loading</span> 속성을 사용하여 로딩 상태를 표시할 수 있습니다.<br>
           로딩 인디케이터는 사용자가 동작이 진행 중임을 인식하도록 도와, 더 나은 인터랙션 경험을 제공합니다.
         </p>
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
           <UiButton
             loading
             label="Loading..."
