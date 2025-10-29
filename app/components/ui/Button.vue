@@ -1,4 +1,5 @@
 <script lang="ts">
+import type { AvatarProps } from '@nuxt/ui'
 import type { ColorType, SizeType } from '~/types/common'
 
 type ButtonType = 'submit' | 'reset' | 'button'
@@ -13,11 +14,13 @@ export interface ButtonProps {
   size?: SizeType
   icon?: string
   trailingIcon?: string
+  avatar?: AvatarProps
   active?: boolean
   loading?: boolean
   type?: ButtonType
   to?: string
   loadingIcon?: string
+  loadingAuto?: boolean
   disabled?: boolean
   target?: string
   ui?: any
@@ -33,6 +36,7 @@ const {
   variant = 'solid',
   size = 'md',
   icon = '',
+  avatar,
   to,
   trailingIcon = '',
   active = true,
@@ -40,6 +44,7 @@ const {
   type = 'button',
   loadingIcon = '',
   disabled = false,
+  loadingAuto = false,
   ui,
   target,
   ariaLabel,
@@ -49,6 +54,7 @@ const {
 <template>
   <div>
     <UButton
+      v-bind="$attrs"
       class="cursor-pointer"
       :color="color"
       :active-color="activeColor"
@@ -58,11 +64,13 @@ const {
       :trailing-icon="trailingIcon"
       :active="active"
       :loading="loading"
+      :avatar="avatar"
       :type="type"
       :to="to"
       :loading-icon="loadingIcon"
       :disabled="disabled"
       :ui="ui"
+      :loading-auto="loadingAuto"
       :target="target"
       :aria-label="ariaLabel"
     >
