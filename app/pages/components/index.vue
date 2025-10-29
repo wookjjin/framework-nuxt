@@ -1,67 +1,42 @@
-<script lang="ts" setup>
-
+<script setup lang="ts">
+const components = [
+  { name: 'Input', desc: '사용자 입력 필드 컴포넌트', link: '/components/input' },
+  { name: 'Button', desc: '다양한 스타일의 버튼', link: '/components/button' },
+  { name: 'Select', desc: '드롭다운 선택 UI', link: '/components/select' },
+  { name: 'Modal', desc: '팝업 및 다이얼로그', link: '/components/modal' },
+  { name: 'Card', desc: '정보 카드 컴포넌트', link: '/components/card' },
+  { name: 'Tabs', desc: '탭 전환 UI', link: '/components/tabs' },
+]
 </script>
 
 <template>
-  <div class="p-4">
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        1. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        2. Button
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        3. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        4. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        5. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        6. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        7. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        8. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        9. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        10. Input
-      </h2>
-    </section>
-    <section class="mt-6 pb-4">
-      <h2 class="text-lg font-semibold">
-        11. Input
-      </h2>
-    </section>
+  <div class="h-full flex flex-col">
+    <div class="max-w-6xl mx-6 px-6 flex-shrink-0">
+      <h1 class="text-3xl font-bold text-gray-800 mb-10">
+        Components
+      </h1>
+    </div>
+
+    <div class="flex-1 overflow-y-auto">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-6">
+          <NuxtLink
+            v-for="(component, index) in components"
+            :key="index"
+            :to="component.link"
+            class="group block p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <h2 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                {{ component.name }}
+              </h2>
+            </div>
+            <p class="text-gray-500 text-sm">
+              {{ component.desc }}
+            </p>
+          </NuxtLink>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
-
-<style>
-
-</style>

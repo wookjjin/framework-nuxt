@@ -23,6 +23,10 @@
   --ui-radius: 0.25rem;
 }
 
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
 .dark {
   /* Semantic colors */
   --ui-primary: var(--color-mint-400);
