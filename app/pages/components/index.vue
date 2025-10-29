@@ -11,11 +11,7 @@ const components = [
 
 <template>
   <div class="h-full flex flex-col">
-    <div class="max-w-6xl mx-6 px-6 flex-shrink-0">
-      <h1 class="text-3xl font-bold text-gray-800 mb-10">
-        Components
-      </h1>
-    </div>
+    <PageTitle page-title="Components" />
 
     <div class="flex-1 overflow-y-auto">
       <div class="max-w-6xl mx-auto px-6">
@@ -27,7 +23,7 @@ const components = [
             class="group block p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
           >
             <div class="flex items-center justify-between mb-3">
-              <h2 class="text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+              <h2 class="text-lg font-semibold text-gray-800 transition-colors group-hover:text-blue-600">
                 {{ component.name }}
               </h2>
             </div>
