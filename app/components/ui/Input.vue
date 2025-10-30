@@ -2,8 +2,8 @@
 import type { AvatarProps } from '@nuxt/ui'
 import type { ColorType, SizeType } from '~/types/common'
 
-export type InputType = 'number' | 'color' | 'button' | 'checkbox' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | string & {}
-export type InputVariantType = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
+type InputType = 'number' | 'color' | 'button' | 'checkbox' | 'date' | 'datetime-local' | 'email' | 'file' | 'hidden' | 'image' | 'month' | 'password' | 'radio' | 'range' | 'reset' | 'search' | 'submit' | 'tel' | 'text' | 'time' | 'url' | 'week' | string & {}
+type InputVariantType = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
 
 export interface InputProps {
   type?: InputType
@@ -45,6 +45,7 @@ const model = defineModel({ default: '' })
 <template>
   <div>
     <UInput
+      v-bind="$attrs"
       v-model="model"
       :type="type"
       :placeholder="placeholder"

@@ -2,6 +2,7 @@
 const components = [
   { name: 'Input', desc: '사용자 입력 필드 컴포넌트', link: '/components/input' },
   { name: 'Button', desc: '다양한 스타일의 버튼', link: '/components/button' },
+  { name: 'Checkbox', desc: '체크박스 UI', link: '/components/checkbox' },
   { name: 'Select', desc: '드롭다운 선택 UI', link: '/components/select' },
   { name: 'Modal', desc: '팝업 및 다이얼로그', link: '/components/modal' },
   { name: 'Card', desc: '정보 카드 컴포넌트', link: '/components/card' },
