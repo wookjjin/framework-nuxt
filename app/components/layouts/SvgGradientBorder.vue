@@ -1,5 +1,10 @@
-<script setup lang="ts">
-const { color = 'var(--ui-primary)', customClass, gradientOpacity = 0.22, offsetMiddle = 0.395 } = defineProps<{
+<script lang="ts" setup>
+const {
+  color = 'var(--ui-primary)',
+  customClass,
+  gradientOpacity = 0.22,
+  offsetMiddle = 0.395,
+} = defineProps<{
   color?: string
   customClass?: string
   gradientOpacity?: number
@@ -42,32 +47,75 @@ const resolvedColor = computed(() => {
 
 <template>
   <svg
-    viewBox="0 0 1440 181" fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer-events-none absolute w-full -top-px transition-all shrink-0 -z-10 duration-[400ms]" :class="[
+    viewBox="0 0 1440 181"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="pointer-events-none absolute w-full -top-px transition-all shrink-0 -z-10 duration-400"
+    :class="[
       customClass, `text-[${color}]`,
     ]"
   >
-    <mask id="path-1-inside" fill="white">
+    <mask
+      id="path-1-inside"
+      fill="white"
+    >
       <path d="M0 0H1440V181H0V0Z" />
     </mask>
 
     <!-- Background gradient -->
-    <path d="M0 0H1440V181H0V0Z" fill="url(#paint0)" :fill-opacity="gradientOpacity" />
+    <path
+      d="M0 0H1440V181H0V0Z"
+      fill="url(#paint0)"
+      :fill-opacity="gradientOpacity"
+    />
 
     <!-- Horizontal gradient -->
-    <path d="M0 2H1440V-2H0V2Z" fill="url(#paint1)" mask="url(#path-1-inside)" />
+    <path
+      d="M0 2H1440V-2H0V2Z"
+      fill="url(#paint1)"
+      mask="url(#path-1-inside)"
+    />
 
     <defs>
       <!-- Vertical gradient -->
-      <linearGradient id="paint0" x1="720" y1="0" x2="720" y2="181" gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id="paint0"
+        x1="720"
+        y1="0"
+        x2="720"
+        y2="181"
+        gradientUnits="userSpaceOnUse"
+      >
         <stop :stop-color="resolvedColor" />
-        <stop offset="1" :stop-color="resolvedColor" stop-opacity="0" />
+        <stop
+          offset="1"
+          :stop-color="resolvedColor"
+          stop-opacity="0"
+        />
       </linearGradient>
 
       <!-- Horizontal gradient -->
-      <linearGradient id="paint1" x1="0" y1="90.5" x2="1440" y2="90.5" gradientUnits="userSpaceOnUse">
-        <stop :stop-color="resolvedColor" stop-opacity="0" />
-        <stop :offset="offsetMiddle" :stop-color="resolvedColor" />
-        <stop offset="1" :stop-color="resolvedColor" stop-opacity="0" />
+      <linearGradient
+        id="paint1"
+        x1="0"
+        y1="90.5"
+        x2="1440"
+        y2="90.5"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop
+          :stop-color="resolvedColor"
+          stop-opacity="0"
+        />
+        <stop
+          :offset="offsetMiddle"
+          :stop-color="resolvedColor"
+        />
+        <stop
+          offset="1"
+          :stop-color="resolvedColor"
+          stop-opacity="0"
+        />
       </linearGradient>
     </defs>
   </svg>

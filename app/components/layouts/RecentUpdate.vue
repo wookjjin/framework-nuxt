@@ -4,7 +4,7 @@
 
 <template>
   <section
-    class="relative isolate bg-gradient-to-b border-t border-default from-muted/20 dark:from-muted/10 to-default/50 dark:to-default/20"
+    class="relative isolate bg-linear-to-b border-t border-default from-muted/20 dark:from-muted/10 to-default/50 dark:to-default/20"
   >
     <div
       class="w-full max-w-(--ui-container) mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32 flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-12 lg:gap-16"
@@ -21,7 +21,7 @@
         <div class="relative overflow-hidden">
           <!-- 로고 자리 -->
           <div
-            class="group relative flex items-center overflow-hidden gap-(--gap) [--gap:--spacing(16)] [--duration:20s] before:absolute before:pointer-events-none before:content-[&quot;&quot;] before:z-2 before:from-default before:to-transparent after:absolute after:pointer-events-none after:content-[&quot;&quot;] after:z-2 after:from-default after:to-transparent flex-row before:inset-y-0 before:left-0 before:h-full before:w-1/3 before:bg-gradient-to-r after:inset-y-0 after:right-0 after:h-full after:w-1/3 after:bg-gradient-to-l backface-hidden mt-6"
+            class="group relative flex items-center overflow-hidden gap-(--gap) [--gap:--spacing(16)] [--duration:20s] before:absolute before:pointer-events-none before:content-[&quot;&quot;] before:z-2 before:from-default before:to-transparent after:absolute after:pointer-events-none after:content-[&quot;&quot;] after:z-2 after:from-default after:to-transparent flex-row before:inset-y-0 before:left-0 before:h-full before:w-1/3 before:bg-linear-to-r after:inset-y-0 after:right-0 after:h-full after:w-1/3 after:bg-linear-to-l backface-hidden mt-6"
           >
             <div class="flex animate-marquee space-x-12">
               <div
@@ -61,7 +61,7 @@
 
         <div class="flex gap-4">
           <div
-            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm border border-default/10 dark:border-default/20"
+            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-default/10 dark:border-default/20"
           >
             <span class="text-xl">🚀</span>
           </div>
@@ -77,7 +77,7 @@
 
         <div class="flex gap-4">
           <div
-            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm border border-default/10 dark:border-default/20"
+            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-default/10 dark:border-default/20"
           >
             <span class="text-xl">🔄</span>
           </div>
@@ -93,7 +93,7 @@
 
         <div class="flex gap-4">
           <div
-            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm border border-default/10 dark:border-default/20"
+            class="w-13 h-13 bg-elevated dark:bg-elevated/60 rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-default/10 dark:border-default/20"
           >
             <span class="text-xl">🏢</span>
           </div>

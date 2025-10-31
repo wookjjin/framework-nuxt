@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useClipboard } from '@vueuse/core'
 
 const route = useRoute()

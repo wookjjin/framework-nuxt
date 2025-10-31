@@ -1,13 +1,15 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import type { IntervalType } from '~/types/common'
 
-const { texts = [
-  'Frontend Developer',
-  'Vue.js Expert',
-  'UI/UX Enthusiast',
-  'Nuxt.js Specialist',
-  'Creative Problem Solver',
-] } = defineProps<{ texts?: string[] }>()
+const {
+  texts = [
+    'Frontend Developer',
+    'Vue.js Expert',
+    'UI/UX Enthusiast',
+    'Nuxt.js Specialist',
+    'Creative Problem Solver',
+  ],
+} = defineProps<{ texts?: string[] }>()
 const colorMode = useColorMode()
 const isDark = computed(() => colorMode.value === 'dark')
 
