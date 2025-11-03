@@ -7,6 +7,7 @@ const components = [
   { name: 'Modal', desc: '팝업 및 다이얼로그', link: '/components/modal' },
   { name: 'Card', desc: '정보 카드 컴포넌트', link: '/components/card' },
   { name: 'Tabs', desc: '탭 전환 UI', link: '/components/tabs' },
+  { name: 'Separator', desc: '구분선 컴포넌트', link: '/components/separator' },
 ]
 </script>
 
