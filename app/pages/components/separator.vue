@@ -19,7 +19,7 @@
           <UiSeparator />
           <UiSeparator label="OR" />
           <UiSeparator icon="i-heroicons-sparkles" />
-          <UiSeparator :avatar="{ src: '/avatars/user-1.png', alt: 'User 1' }" />
+          <UiSeparator :avatar="{ src: 'https://i.pravatar.cc/120?img=1', alt: 'User 1' }" />
         </div>
       </section>
 

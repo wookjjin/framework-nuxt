@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     '@tresjs/nuxt',
     'nuxt-og-image',
     'nuxt-llms',
+    '@netlify/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   icon: {
@@ -75,7 +76,7 @@ export default defineNuxtConfig({
         contentFilters: [
           { field: 'path', operator: 'LIKE', value: '/docs/getting-started%' },
         ],
-      },
+      } as any,
     ],
   },
 })
