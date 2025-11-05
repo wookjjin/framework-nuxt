@@ -8,6 +8,7 @@ const components = [
   { name: 'Card', desc: '정보 카드 컴포넌트', link: '/components/card' },
   { name: 'Tabs', desc: '탭 전환 UI', link: '/components/tabs' },
   { name: 'Separator', desc: '구분선 컴포넌트', link: '/components/separator' },
+  { name: 'Alert', desc: '경고창 컴포넌트', link: '/components/alert' },
 ]
 </script>
 
