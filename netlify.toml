@@ -1,8 +1,0 @@
-[build]
-  command = "npm rebuild better-sqlite3 --build-from-source && npm run build"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
