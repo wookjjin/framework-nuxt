@@ -1,6 +1,6 @@
 [build]
-  command = "npm run build"
-  publish = ".output/public"
+  command = "npm rebuild better-sqlite3 --build-from-source && npm run build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
