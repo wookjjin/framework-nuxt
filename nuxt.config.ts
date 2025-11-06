@@ -32,7 +32,6 @@ export default defineNuxtConfig({
     '@tresjs/nuxt',
     'nuxt-og-image',
     'nuxt-llms',
-    '@netlify/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   icon: {
@@ -67,7 +66,7 @@ export default defineNuxtConfig({
     glsl: true,
   },
   llms: {
-    domain: 'https://example.com',
+    // domain: 'https://example.com',
     title: 'Wuxt',
     description: 'a Nuxt-based framework',
     sections: [
