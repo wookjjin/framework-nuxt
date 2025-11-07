@@ -66,7 +66,7 @@ export default defineNuxtConfig({
     glsl: true,
   },
   llms: {
-    // domain: 'https://example.com',
+    domain: 'https://wuxt.netlify.app/',
     title: 'Wuxt',
     description: 'a Nuxt-based framework',
     sections: [
