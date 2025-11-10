@@ -9,6 +9,7 @@ const components = [
   { name: 'Tabs', desc: '탭 전환 UI', link: '/components/tabs' },
   { name: 'Separator', desc: '구분선 컴포넌트', link: '/components/separator' },
   { name: 'Alert', desc: '경고창 컴포넌트', link: '/components/alert' },
+  { name: 'Badge', desc: '다양한 스타일일의 뱃지', link: '/components/badge' },
 ]
 </script>
 

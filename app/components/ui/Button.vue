@@ -74,7 +74,7 @@ const {
       :target="target"
       :aria-label="ariaLabel"
     >
-      <template v-if="label ">
+      <template v-if="label">
         {{ label }}
       </template>
       <slot v-if="$slots.default" />

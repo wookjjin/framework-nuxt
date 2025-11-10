@@ -3,7 +3,7 @@ import type { NavigationMenuItem } from '@nuxt/ui'
 
 const route = useRoute()
 
-const items = ref<NavigationMenuItem[][]>([
+const items = computed<NavigationMenuItem[][]>(() => [
   [
     {
       label: 'Docs',
@@ -41,13 +41,13 @@ const items = ref<NavigationMenuItem[][]>([
       label: 'Components',
       icon: 'i-lucide-box',
       to: '/components',
-      active: route.path.startsWith('/components/'),
+      active: route.path.startsWith('/components'),
     },
     {
       label: 'Examples',
       icon: 'i-lucide-box',
       to: '/examples',
-      active: route.path.startsWith('/examples/'),
+      active: route.path.startsWith('/examples'),
       children: [
       ],
     },
