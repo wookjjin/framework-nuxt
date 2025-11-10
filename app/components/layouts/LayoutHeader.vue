@@ -69,7 +69,11 @@ const items = computed<NavigationMenuItem[][]>(() => [
 </script>
 
 <template>
-  <UHeader>
+  <UHeader
+    :menu="{
+      transition: true,
+    }"
+  >
     <template #title>
       <UIcon
         name="i-lucide-cherry"
@@ -82,9 +86,7 @@ const items = computed<NavigationMenuItem[][]>(() => [
     <template #right>
       <ColorMode />
 
-      <UTooltip
-        text="Open on GitHub"
-      >
+      <UTooltip text="Open on GitHub">
         <!-- :kbds="['meta', 'G']" -->
         <UiButton
           color="neutral"
@@ -95,6 +97,14 @@ const items = computed<NavigationMenuItem[][]>(() => [
           aria-label="GitHub"
         />
       </UTooltip>
+    </template>
+
+    <template #body>
+      <UNavigationMenu
+        :items="items"
+        orientation="vertical"
+        class="-mx-2.5"
+      />
     </template>
   </UHeader>
 </template>

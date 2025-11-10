@@ -19,6 +19,7 @@ const {
   title = '',
   description = '',
   close = true,
+  transition = true,
   closeIcon,
   dismissible = true,
   ui,
