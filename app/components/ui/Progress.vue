@@ -29,10 +29,6 @@ const {
 } = defineProps<ProgressProps>()
 
 const model = defineModel<null | number>({ default: null })
-
-watchEffect(() => {
-  console.log(model.value)
-})
 </script>
 
 <template>
