@@ -100,7 +100,7 @@ const horizontalAlerts: AlertProps[] = [
           <UiAlert
             v-for="(alert, i) in basicAlerts"
             :key="i"
-            v-bind="alert as AlertProps"
+            v-bind="alert"
           />
         </div>
       </section>
@@ -118,7 +118,7 @@ const horizontalAlerts: AlertProps[] = [
           <UiAlert
             v-for="(alert, i) in closableAlerts"
             :key="i"
-            v-bind="alert as AlertProps"
+            v-bind="alert"
           />
         </div>
       </section>
@@ -136,7 +136,7 @@ const horizontalAlerts: AlertProps[] = [
           <UiAlert
             v-for="(alert, i) in actionAlerts"
             :key="i"
-            v-bind="alert as AlertProps"
+            v-bind="alert"
           />
         </div>
       </section>
@@ -154,7 +154,7 @@ const horizontalAlerts: AlertProps[] = [
           <UiAlert
             v-for="(alert, i) in horizontalAlerts"
             :key="i"
-            v-bind="alert as AlertProps"
+            v-bind="alert"
           />
         </div>
       </section>
