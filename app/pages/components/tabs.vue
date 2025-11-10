@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
-import UiTabs from '~/components/ui/Tabs.vue'
-
 const basicItems = ref([
   { label: 'Home', icon: 'i-lucide-house', content: 'This is the Home tab content.' },
   { label: 'Profile', icon: 'i-lucide-user', content: 'This is the Profile tab content.' },

@@ -1,16 +1,16 @@
 <script lang="ts">
 import type { TabsItem } from '@nuxt/ui'
-import type { ColorType, SizeType } from '~/types/common'
+import type { ColorType, OrientationType, SizeType } from '~/types/common'
 
 type TabsVariant = 'pill' | 'link'
-type TabsOrientation = 'horizontal' | 'vertical'
+
 export interface TabsProps {
   items?: TabsItem[]
   color?: ColorType
   variant?: TabsVariant
   size?: SizeType
   content?: boolean
-  orientation?: TabsOrientation
+  orientation?: OrientationType
   labelKey?: string
   defaultValue?: string | number
   unmountOnHide?: boolean

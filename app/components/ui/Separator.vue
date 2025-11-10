@@ -1,10 +1,11 @@
 <script lang="ts">
 import type { AvatarProps } from '@nuxt/ui'
-import type { ColorType, SizeType } from '~/types/common'
+import type { ColorType, OrientationType, SizeType } from '~/types/common'
 
 type SeparatorType = 'solid' | 'dashed' | 'dotted'
+
 export interface SeparatorProps {
-  orientation?: 'horizontal' | 'vertical'
+  orientation?: OrientationType
   label?: string
   icon?: string | object
   color?: ColorType

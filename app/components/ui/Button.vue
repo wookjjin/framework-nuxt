@@ -54,7 +54,6 @@ const {
 <template>
   <div>
     <UButton
-      v-bind="$attrs"
       class="cursor-pointer"
       :color="color"
       :active-color="activeColor"

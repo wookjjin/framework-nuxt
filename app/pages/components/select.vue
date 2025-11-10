@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { AvatarProps } from '@nuxt/ui'
-import UiSelect from '~/components/ui/Select.vue'
 
 const items = [
   { label: 'Apple', value: 'apple' },
