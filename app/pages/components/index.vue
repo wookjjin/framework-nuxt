@@ -11,6 +11,7 @@ const components = [
   { name: 'Alert', desc: '경고창 컴포넌트', link: '/components/alert' },
   { name: 'Badge', desc: '다양한 스타일일의 뱃지', link: '/components/badge' },
   { name: 'Progress', desc: '프로그레스 컴포넌트', link: '/components/progress' },
+  { name: 'Textarea', desc: '멀티 라인 사용자 입력 필드 컴포넌트', link: '/components/textarea' },
 ]
 </script>
 

@@ -17,10 +17,10 @@ const decrease = () => {
 }
 
 const reset = () => {
-  value.value = 0
+  basicValue.value = 0
 }
 
-const colors: ColorType[] = ['primary', 'secondary', 'success', 'warning', 'error']
+const colors: ColorType[] = ['primary', 'secondary', 'info', 'success', 'warning', 'neutral', 'error']
 const sizes: SizeType[] = ['xs', 'sm', 'md', 'lg', 'xl']
 const orientations: OrientationType[] = ['horizontal', 'vertical']
 const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'swing', 'elastic']
