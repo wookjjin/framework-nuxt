@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const components = [
   { name: 'Input', desc: '사용자 입력 필드 컴포넌트', link: '/components/input' },
+  { name: 'Textarea', desc: '멀티 라인 사용자 입력 필드 컴포넌트', link: '/components/textarea' },
   { name: 'Button', desc: '다양한 스타일의 버튼', link: '/components/button' },
   { name: 'Checkbox', desc: '체크박스 UI', link: '/components/checkbox' },
   { name: 'Select', desc: '드롭다운 선택 UI', link: '/components/select' },
@@ -11,13 +12,15 @@ const components = [
   { name: 'Alert', desc: '경고창 컴포넌트', link: '/components/alert' },
   { name: 'Badge', desc: '다양한 스타일일의 뱃지', link: '/components/badge' },
   { name: 'Progress', desc: '프로그레스 컴포넌트', link: '/components/progress' },
-  { name: 'Textarea', desc: '멀티 라인 사용자 입력 필드 컴포넌트', link: '/components/textarea' },
 ]
 </script>
 
 <template>
   <div class="h-full flex flex-col">
-    <PageTitle page-title="Components" />
+    <PageTitle
+      page-title="Components"
+      :is-previous="false"
+    />
 
     <div class="flex-1 overflow-y-auto">
       <div class="max-w-6xl mx-auto px-6">
