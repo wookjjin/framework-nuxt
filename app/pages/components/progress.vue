@@ -44,7 +44,7 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             <span class="font-semibold">max</span> 값에 따라 퍼센트가 계산됩니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiProgress
               v-model="basicValue"
               :max="max"
@@ -86,7 +86,9 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             기반으로 합니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiProgress
               v-for="color in colors"
               :key="color"
@@ -109,7 +111,9 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             입니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiProgress
               v-for="size in sizes"
               :key="size"
@@ -130,7 +134,9 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             진행 방향을 가로(horizontal) 또는 세로(vertical)로 지정할 수 있습니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex justify-around items-end">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex justify-around items-end dark:bg-elevated/40 dark:border-default/30"
+          >
             <div
               v-for="orientation in orientations"
               :key="orientation"
@@ -160,7 +166,9 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             입니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiProgress
               v-for="animation in animations"
               :key="animation"
@@ -181,7 +189,7 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
             주로 색상이 반전된 테마나 어두운 배경에서 시각적 강조를 위해 사용됩니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiProgress
               v-model="value"
               :max="max"
@@ -196,8 +204,4 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
 </template>
 
 <style scoped>
-section {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-}
 </style>

@@ -71,7 +71,9 @@ function getUserAvatar(value: string) {
           variant 속성을 통해 Select의 외형 스타일을 변경할 수 있습니다. outline, soft, subtle, ghost, none 타입을 지원합니다.
         </p>
 
-        <div class="flex flex-col gap-4 bg-white border border-muted rounded-xl p-6">
+        <div
+          class="flex flex-col gap-4 bg-white border border-muted rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiSelect
             v-model="selectedVariant"
             :items="items"
@@ -119,7 +121,9 @@ function getUserAvatar(value: string) {
           color 속성으로 Select의 색상 테마를 변경할 수 있습니다. primary, success, warning, error 등을 사용할 수 있습니다.
         </p>
 
-        <div class="flex flex-col gap-4 bg-white border border-muted rounded-xl p-6">
+        <div
+          class="flex flex-col gap-4 bg-white border border-muted rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiSelect
             v-model="selectedColor"
             :items="items"
@@ -156,6 +160,7 @@ function getUserAvatar(value: string) {
             v-model="selectedColor"
             :items="items"
             portal="body"
+            highlight
             color="warning"
             placeholder="Warning"
           />
@@ -163,6 +168,7 @@ function getUserAvatar(value: string) {
             v-model="selectedColor"
             :items="items"
             portal="body"
+            highlight
             color="neutral"
             placeholder="Neutral"
           />
@@ -170,6 +176,7 @@ function getUserAvatar(value: string) {
             v-model="selectedColor"
             :items="items"
             portal="body"
+            highlight
             color="error"
             placeholder="Error"
           />

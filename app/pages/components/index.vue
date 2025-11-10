@@ -29,14 +29,16 @@ const components = [
             v-for="(component, index) in components"
             :key="index"
             :to="component.link"
-            class="group block p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100"
+            class="group block p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-100 dark:bg-elevated/40 dark:border-default/30"
           >
             <div class="flex items-center justify-between mb-3">
-              <h2 class="text-lg font-semibold text-gray-800 transition-colors group-hover:text-blue-600">
+              <h2
+                class="text-lg font-semibold text-gray-800 transition-colors group-hover:text-blue-600  dark:text-highlighted"
+              >
                 {{ component.name }}
               </h2>
             </div>
-            <p class="text-gray-500 text-sm">
+            <p class="text-gray-500 text-sm dark:text-muted">
               {{ component.desc }}
             </p>
           </NuxtLink>

@@ -30,7 +30,7 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             <span class="font-semibold">placeholder</span>로 안내 문구를 표시할 수 있습니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiTextarea
               v-model="basicValue"
               placeholder="내용을 입력하세요..."
@@ -55,7 +55,9 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             <span class="font-semibold">success</span>, <span class="font-semibold">error</span> 등으로 피드백을 표현할 수 있습니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiTextarea
               v-for="color in colors"
               :key="color"
@@ -78,7 +80,9 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             <span class="font-semibold">xs, sm, md, lg, xl</span> 입니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiTextarea
               v-for="size in sizes"
               :key="size"
@@ -101,7 +105,9 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             <span class="font-semibold">outline, soft, subtle, ghost, none</span> 입니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-3 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiTextarea
               v-for="variant in variants"
               :key="variant"
@@ -123,7 +129,7 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             입력 내용에 따라 높이가 자동으로 조정됩니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiTextarea
               v-model="autoresizeValue"
               autoresize
@@ -144,7 +150,9 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             이용하여 상태를 시각적으로 표현할 수 있습니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4">
+          <div
+            class="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiTextarea
               v-model="loadingValue"
               placeholder="로딩 상태 예시"
@@ -170,7 +178,7 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
             <span class="font-semibold">disabled</span> 속성은 사용자가 입력할 수 없도록 비활성화합니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiTextarea
               v-model="disabledValue"
               placeholder="입력 불가 상태"
@@ -185,8 +193,5 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
 </template>
 
 <style scoped>
-section {
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-}
+
 </style>

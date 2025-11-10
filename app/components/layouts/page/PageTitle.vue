@@ -10,7 +10,7 @@ const movePrevious = () => {
 <template>
   <div class="max-w-6xl mx-6 px-6 shrink-0">
     <div class="flex justify-between items-center mb-10">
-      <h1 class="text-3xl font-bold text-gray-800">
+      <h1 class="text-3xl font-bold text-gray-800 dark:text-highlighted">
         {{ pageTitle }}
       </h1>
       <UIcon

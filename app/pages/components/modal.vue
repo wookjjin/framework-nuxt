@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-
 const basicModal = ref(false)
 const dismissibleModal = ref(false)
 const fullscreenModal = ref(false)
@@ -24,7 +23,7 @@ const fullscreenModal = ref(false)
             닫기 버튼(<span class="font-semibold">close</span>)으로 제어할 수 있습니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiButton
               label="Open Basic Modal"
               color="primary"
@@ -72,7 +71,7 @@ const fullscreenModal = ref(false)
             이 기능은 단순 알림용 모달이나 사용자 피드백을 유도할 때 유용합니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiButton
               label="Open Non-dismissible Modal"
               color="primary"
@@ -114,7 +113,7 @@ const fullscreenModal = ref(false)
             모바일 환경이나 대형 폼, 상세 페이지 표시 시 유용합니다.
           </p>
 
-          <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
             <UiButton
               label="Open Fullscreen Modal"
               color="primary"

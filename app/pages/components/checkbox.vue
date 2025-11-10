@@ -16,7 +16,9 @@
           <span class="font-semibold">label</span> 속성을 사용하여 옵션의 이름을 표시할 수 있습니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox label="Option 1" />
           <UiCheckbox label="Option 2" />
           <UiCheckbox
@@ -36,7 +38,9 @@
           <span class="font-semibold">primary, success, warning, error, neutral</span>과 같은 색상으로 상태나 목적을 구분할 수 있습니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="Primary"
             color="primary"
@@ -87,7 +91,9 @@
           >card</span>는 카드형 UI로, 항목 전체가 선택 영역이 되며 시각적으로 강조됩니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="Card"
             variant="card"
@@ -110,7 +116,9 @@
           작은 사이즈는 공간이 협소한 영역에, 큰 사이즈는 강조가 필요한 영역에 적합합니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="Small"
             size="sm"
@@ -137,7 +145,9 @@
           아이콘은 시스템의 톤앤매너에 맞게 변경 가능합니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="Custom Check"
             icon="i-lucide-rocket"
@@ -161,7 +171,9 @@
           옵션의 의미나 주의사항을 함께 안내할 때 유용합니다.
         </p>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="이용약관 동의"
             description="서비스 이용약관에 동의합니다."
@@ -183,7 +195,9 @@
           사용자가 상호작용할 수 없는 항목을 명확하게 구분할 때 사용합니다.
         </p>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6">
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+        >
           <UiCheckbox
             label="Disabled (Unchecked)"
             disabled

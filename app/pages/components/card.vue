@@ -21,21 +21,23 @@
             이를 통해 컨텐츠의 중요도나 시각적 위계를 명확히 표현할 수 있습니다.
           </p>
 
-          <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6">
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-muted rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiCard variant="solid">
               <template #header>
-                <h3 class="text-lg font-semibold text-white">
+                <h3 class="text-lg font-semibold text-white dark:text-black">
                   Solid
                 </h3>
               </template>
-              <p class="text-white text-sm">
+              <p class="text-white text-sm dark:text-muted">
                 배경이 채워져 컨텐츠 영역이 강조되는 스타일입니다.
               </p>
             </UiCard>
 
             <UiCard variant="outline">
               <template #header>
-                <h3 class="text-lg font-semibold text-gray-800">
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-highlighted">
                   Outline
                 </h3>
               </template>
@@ -46,7 +48,7 @@
 
             <UiCard variant="soft">
               <template #header>
-                <h3 class="text-lg font-semibold text-gray-800">
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-highlighted">
                   Soft
                 </h3>
               </template>
@@ -57,7 +59,7 @@
 
             <UiCard variant="subtle">
               <template #header>
-                <h3 class="text-lg font-semibold text-gray-800">
+                <h3 class="text-lg font-semibold text-gray-800 dark:text-highlighted">
                   Subtle
                 </h3>
               </template>
@@ -79,11 +81,13 @@
             이를 통해 컨텐츠의 구조를 명확히 하고, 다양한 레이아웃을 구성할 수 있습니다.
           </p>
 
-          <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 bg-white border border-muted rounded-xl p-6">
+          <div
+            class="grid sm:grid-cols-1 md:grid-cols-2 gap-6 bg-white border border-muted rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
             <UiCard variant="outline">
               <template #header>
                 <div class="flex items-center justify-between">
-                  <h3 class="text-lg font-semibold text-gray-800">
+                  <h3 class="text-lg font-semibold text-gray-800 dark:text-highlighted">
                     Header
                   </h3>
                   <UiButton
