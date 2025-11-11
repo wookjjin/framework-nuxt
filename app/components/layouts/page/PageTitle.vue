@@ -8,7 +8,7 @@ const movePrevious = () => {
 </script>
 
 <template>
-  <div class="max-w-6xl w-full mx-6 shrink-0 px-6">
+  <div class="max-w-6xl w-full shrink-0">
     <div class="flex justify-between items-center mb-10">
       <h1 class="text-3xl font-bold text-gray-800 dark:text-highlighted">
         {{ pageTitle }}
