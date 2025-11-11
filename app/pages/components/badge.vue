@@ -57,8 +57,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           1. Variants
         </h2>
-        <p class="text-gray-500 mb-6">
-          기본적인 Badge의 <code>color</code> 및 <code>variant</code> 조합 예제입니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          기본적인 Badge의 <span class="font-semibold dark:text-dimmed">color</span> 및 <span class="font-semibold dark:text-dimmed">variant</span> 조합 예제입니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge
@@ -74,8 +74,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           2. Square
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>square</code> 속성을 사용하여 정사각형 형태로 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">square</span> 속성을 사용하여 정사각형 형태로 표시할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge
@@ -91,8 +91,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           3. Icon
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>icon</code> 속성을 통해 아이콘을 함께 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">icon</span> 속성을 통해 아이콘을 함께 표시할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge
@@ -108,8 +108,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           4. Leading Icon
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>leading</code>과 <code>leadingIcon</code> 속성을 사용해 텍스트 앞에 아이콘을 배치할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">leading</span>과 <span class="font-semibold dark:text-dimmed">leadingIcon</span> 속성을 사용해 텍스트 앞에 아이콘을 배치할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge
@@ -125,8 +125,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           5. Trailing Icon
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>trailing</code>과 <code>trailingIcon</code> 속성을 사용해 텍스트 뒤에 아이콘을 배치할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">trailing</span>과 <span class="font-semibold dark:text-dimmed">trailingIcon</span> 속성을 사용해 텍스트 뒤에 아이콘을 배치할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge
@@ -142,8 +142,8 @@ const avatarBadges: BadgeProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           6. Avatar
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>avatar</code> 속성을 사용하여 사용자 아바타와 함께 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">avatar</span> 속성을 사용하여 사용자 아바타와 함께 표시할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-3">
           <UiBadge

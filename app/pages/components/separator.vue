@@ -11,15 +11,16 @@
         <h2 class="text-xl font-semibold mb-4">
           1. Basic
         </h2>
-        <p class="text-gray-500 mb-6">
-          기본 구분선 형태입니다. label 또는 icon, avatar 속성을 추가하여 시각적 구분을 강화할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          기본 구분선 형태입니다. <span class="font-semibold dark:text-dimmed">label</span> 또는 <span
+            class="font-semibold dark:text-dimmed"
+          >icon, avatar</span> 속성을 추가하여 시각적 구분을 강화할 수 있습니다.
         </p>
 
         <div class="flex flex-col gap-4">
           <UiSeparator />
           <UiSeparator label="OR" />
           <UiSeparator icon="i-heroicons-sparkles" />
-          <UiSeparator :avatar="{ src: 'https://i.pravatar.cc/120?img=1', alt: 'User 1' }" />
         </div>
       </section>
 
@@ -28,8 +29,13 @@
         <h2 class="text-xl font-semibold mb-4">
           2. Orientation
         </h2>
-        <p class="text-gray-500 mb-6">
-          orientation 속성을 통해 가로(horizontal) 또는 세로(vertical) 방향으로 설정할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">orientation</span> 속성을 통해 가로(<span
+            class="font-semibold dark:text-dimmed"
+          >horizontal</span>) 또는 세로(<span
+            class="font-semibold dark:text-dimmed"
+          >vertical</span>) 방향으로 설정할 수
+          있습니다.
         </p>
 
         <div class="flex items-center justify-center gap-8">
@@ -49,8 +55,10 @@
         <h2 class="text-xl font-semibold mb-4">
           3. Type
         </h2>
-        <p class="text-gray-500 mb-6">
-          type 속성을 사용하여 선의 스타일을 solid, dashed, dotted 중에서 선택할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">type</span> 속성을 사용하여 선의 스타일을 <span
+            class="font-semibold dark:text-dimmed"
+          >solid, dashed, dotted</span> 중에서 선택할 수 있습니다.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -74,8 +82,10 @@
         <h2 class="text-xl font-semibold mb-4">
           4. Size
         </h2>
-        <p class="text-gray-500 mb-6">
-          size 속성을 이용하여 선의 두께를 조절할 수 있습니다. xs, sm, md, lg 값을 지원합니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">size</span> 속성을 이용하여 선의 두께를 조절할 수 있습니다. <span
+            class="font-semibold dark:text-dimmed"
+          >xs, sm, md, lg</span> 값을 지원합니다.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -103,8 +113,11 @@
         <h2 class="text-xl font-semibold mb-4">
           5. Color
         </h2>
-        <p class="text-gray-500 mb-6">
-          color 속성을 통해 테마 색상(primary, success, warning, error 등)을 지정할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">color</span> 속성을 통해 테마 색상(<span
+            class="font-semibold dark:text-dimmed"
+          >primary, success, warning, error 등</span>)을 지정할 수
+          있습니다.
         </p>
 
         <div class="flex flex-col gap-4">

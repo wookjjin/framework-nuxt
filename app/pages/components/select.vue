@@ -51,8 +51,10 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           1. Basic
         </h2>
-        <p class="text-gray-500 mb-6">
-          기본 Select 예제입니다. placeholder와 items 속성을 지정하면 기본 드롭다운을 사용할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          기본 Select 예제입니다. <span class="font-semibold dark:text-dimmed">placeholder</span>와 <span
+            class="font-semibold dark:text-dimmed"
+          >items</span> 속성을 지정하면 기본 드롭다운을 사용할 수 있습니다.
         </p>
 
         <UiSelect
@@ -67,8 +69,13 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           2. Variant
         </h2>
-        <p class="text-gray-500 mb-6">
-          variant 속성을 통해 Select의 외형 스타일을 변경할 수 있습니다. outline, soft, subtle, ghost, none 타입을 지원합니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">variant</span> 속성을 통해 <span
+            class="font-semibold dark:text-dimmed"
+          >Select</span>의 외형 스타일을 변경할 수 있습니다. <span
+            class="font-semibold dark:text-dimmed"
+          >outline, soft,
+            s ubtle, ghost, none</span> 타입을 지원합니다.
         </p>
 
         <div
@@ -117,8 +124,13 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           3. Color
         </h2>
-        <p class="text-gray-500 mb-6">
-          color 속성으로 Select의 색상 테마를 변경할 수 있습니다. primary, success, warning, error 등을 사용할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">color</span> 속성으로 <span
+            class="font-semibold dark:text-dimmed"
+          >Select</span>의 색상 테마를 변경할 수 있습니다. <span
+            class="font-semibold dark:text-dimmed"
+          >primary, success, warning,
+            error</span> 등을 사용할 수 있습니다.
         </p>
 
         <div
@@ -188,7 +200,7 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           4. Multiple
         </h2>
-        <p class="text-gray-500 mb-6">
+        <p class="text-gray-500 mb-6 dark:text-muted">
           multiple 속성을 사용하면 여러 값을 동시에 선택할 수 있습니다.
         </p>
 
@@ -206,8 +218,10 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           5. Avatar & Icon
         </h2>
-        <p class="text-gray-500 mb-6">
-          icon 또는 avatar 속성을 통해 항목에 아이콘이나 프로필 이미지를 함께 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">icon</span> 또는 <span
+            class="font-semibold dark:text-dimmed"
+          >avatar</span> 속성을 통해 항목에 아이콘이나 프로필 이미지를 함께 표시할 수 있습니다.
         </p>
 
         <UiSelect
@@ -234,8 +248,10 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           6. Loading
         </h2>
-        <p class="text-gray-500 mb-6">
-          loading 속성을 true로 설정하면 데이터 로딩 상태를 시각적으로 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">loading</span> 속성을 <span
+            class="font-semibold dark:text-dimmed"
+          >true</span>로 설정하면 데이터 로딩 상태를 시각적으로 표시할 수 있습니다.
         </p>
 
         <UiSelect
@@ -252,8 +268,8 @@ function getUserAvatar(value: string) {
         <h2 class="text-xl font-semibold mb-4">
           7. Grouped Items
         </h2>
-        <p class="text-gray-500 mb-6">
-          2차원 배열 형태의 items를 전달하면 그룹 단위로 구분된 Select를 만들 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          2차원 배열 형태의 <span class="font-semibold dark:text-dimmed">items</span>를 전달하면 그룹 단위로 구분된 Select를 만들 수 있습니다.
         </p>
 
         <UiSelect

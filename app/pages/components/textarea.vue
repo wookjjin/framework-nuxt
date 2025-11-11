@@ -23,11 +23,11 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             1. Basic
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">Textarea</span>는 여러 줄의 텍스트 입력을 위한
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">Textarea</span>는 여러 줄의 텍스트 입력을 위한
             기본 입력 컴포넌트입니다.<br>
-            <span class="font-semibold">v-model</span>을 통해 양방향 데이터 바인딩이 가능하며,
-            <span class="font-semibold">placeholder</span>로 안내 문구를 표시할 수 있습니다.
+            <span class="font-semibold dark:text-dimmed">v-model</span>을 통해 양방향 데이터 바인딩이 가능하며,
+            <span class="font-semibold dark:text-dimmed">placeholder</span>로 안내 문구를 표시할 수 있습니다.
           </p>
 
           <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
@@ -48,11 +48,11 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             2. Color
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">color</span> 속성을 이용하여 다양한 테마 색상으로
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">color</span> 속성을 이용하여 다양한 테마 색상으로
             표시할 수 있습니다.<br>
-            일반적으로 <span class="font-semibold">primary</span>는 기본 색상이며,
-            <span class="font-semibold">success</span>, <span class="font-semibold">error</span> 등으로 피드백을 표현할 수 있습니다.
+            일반적으로 <span class="font-semibold dark:text-dimmed">primary</span>는 기본 색상이며,
+            <span class="font-semibold dark:text-dimmed">success</span>, <span class="font-semibold">error</span> 등으로 피드백을 표현할 수 있습니다.
           </p>
 
           <div
@@ -74,10 +74,10 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             3. Size
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">size</span> 속성으로 입력 영역의 크기를 조정할 수 있습니다.<br>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">size</span> 속성으로 입력 영역의 크기를 조정할 수 있습니다.<br>
             사용 가능한 값은
-            <span class="font-semibold">xs, sm, md, lg, xl</span> 입니다.
+            <span class="font-semibold dark:text-dimmed">xs, sm, md, lg, xl</span> 입니다.
           </p>
 
           <div
@@ -99,10 +99,10 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             4. Variant
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">variant</span> 속성은 테두리나 배경 표현 방식을 지정합니다.<br>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">variant</span> 속성은 테두리나 배경 표현 방식을 지정합니다.<br>
             사용 가능한 값은
-            <span class="font-semibold">outline, soft, subtle, ghost, none</span> 입니다.
+            <span class="font-semibold dark:text-dimmed">outline, soft, subtle, ghost, none</span> 입니다.
           </p>
 
           <div
@@ -124,8 +124,8 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             5. Autoresize
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">autoresize</span> 속성을 true로 설정하면
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">autoresize</span> 속성을 true로 설정하면
             입력 내용에 따라 높이가 자동으로 조정됩니다.
           </p>
 
@@ -145,8 +145,8 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             6. Icon & Loading
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">icon</span> 또는 <span class="font-semibold">loading</span> 속성을
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">icon</span> 또는 <span class="font-semibold dark:text-dimmed">loading</span> 속성을
             이용하여 상태를 시각적으로 표현할 수 있습니다.
           </p>
 
@@ -174,8 +174,8 @@ const variants: TextareaVariantType[] = ['outline', 'soft', 'subtle', 'ghost', '
           <h2 class="text-xl font-semibold mb-4">
             7. Disabled
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">disabled</span> 속성은 사용자가 입력할 수 없도록 비활성화합니다.
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">disabled</span> 속성은 사용자가 입력할 수 없도록 비활성화합니다.
           </p>
 
           <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">

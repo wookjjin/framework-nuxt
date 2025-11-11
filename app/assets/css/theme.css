@@ -251,6 +251,16 @@
   --color-stone-700: oklch(37.4% 0.01 67.558);
   --color-stone-800: oklch(26.8% 0.007 34.298);
   --color-stone-900: oklch(21.6% 0.006 56.043);
+  --color-text-50:  oklch(96% 0.01 250);
+  --color-text-100: oklch(90% 0.015 250);
+  --color-text-200: oklch(86% 0.02 245);
+  --color-text-300: oklch(80% 0.025 245);
+  --color-text-400: oklch(74% 0.03 240);
+  --color-text-500: oklch(70% 0.05 250);
+  --color-text-600: oklch(58% 0.04 250);
+  --color-text-700: oklch(48% 0.03 250);
+  --color-text-800: oklch(36% 0.02 250);  
+  --color-text-900: oklch(26% 0.015 250);
   --color-black: #000;
   --color-white: #fff;
   --spacing: 0.25rem;

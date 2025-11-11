@@ -92,8 +92,8 @@ const horizontalAlerts: AlertProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           1. Variants
         </h2>
-        <p class="text-gray-500 mb-6">
-          기본적인 Alert의 <code>color</code> 및 <code>variant</code> 조합 예제입니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          기본적인 Alert의 <span class="font-semibold dark:text-dimmed">color</span> 및 <span class="font-semibold dark:text-dimmed">variant</span> 조합 예제입니다.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -110,8 +110,8 @@ const horizontalAlerts: AlertProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           2. Closable
         </h2>
-        <p class="text-gray-500 mb-6">
-          닫기 버튼(<code>close</code>)이 활성화된 Alert입니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          닫기 버튼(<span class="font-semibold dark:text-dimmed">close</span>)이 활성화된 Alert입니다.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -128,8 +128,8 @@ const horizontalAlerts: AlertProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           3. With Actions
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>actions</code> 속성을 사용하여 버튼을 함께 표시할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">actions</span> 속성을 사용하여 버튼을 함께 표시할 수 있습니다.
         </p>
 
         <div class="flex flex-col gap-4">
@@ -146,8 +146,8 @@ const horizontalAlerts: AlertProps[] = [
         <h2 class="text-xl font-semibold mb-4">
           4. Orientation
         </h2>
-        <p class="text-gray-500 mb-6">
-          <code>orientation</code>을 <code>horizontal</code>로 설정하여 <code>actions</code>속성으로 렌더링된 버튼에 가로 레이아웃을 적용할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">orientation</span>을 <span class="font-semibold dark:text-dimmed">horizontal</span>로 설정하여 <span class="font-semibold dark:text-dimmed">actions</span>속성으로 렌더링된 버튼에 가로 레이아웃을 적용할 수 있습니다.
         </p>
 
         <div class="flex flex-col gap-4">

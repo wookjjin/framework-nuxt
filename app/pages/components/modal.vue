@@ -15,12 +15,12 @@ const fullscreenModal = ref(false)
           <h2 class="text-xl font-semibold mb-4">
             1. Basic
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">Modal</span>은 사용자에게 중요한 메시지나
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold text-dimmed">Modal</span>은 사용자에게 중요한 메시지나
             추가 입력을 요청할 때 사용됩니다.<br>
-            기본 모달은 제목(<span class="font-semibold">title</span>)과 설명(<span class="font-semibold">description</span>)을
+            기본 모달은 제목(<span class="font-semibold text-dimmed">title</span>)과 설명(<span class="font-semibold text-dimmed">description</span>)을
             표시하며,
-            닫기 버튼(<span class="font-semibold">close</span>)으로 제어할 수 있습니다.
+            닫기 버튼(<span class="font-semibold text-dimmed">close</span>)으로 제어할 수 있습니다.
           </p>
 
           <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
@@ -65,8 +65,8 @@ const fullscreenModal = ref(false)
           <h2 class="text-xl font-semibold mb-4">
             2. Dismissible
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">dismissible</span> 속성을 통해 사용자가
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold text-dimmed">dismissible</span> 속성을 통해 사용자가
             배경을 클릭하거나 ESC 키로 모달을 닫을 수 있는지 설정할 수 있습니다.<br>
             이 기능은 단순 알림용 모달이나 사용자 피드백을 유도할 때 유용합니다.
           </p>
@@ -107,8 +107,8 @@ const fullscreenModal = ref(false)
           <h2 class="text-xl font-semibold mb-4">
             3. Fullscreen
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">fullscreen</span> 속성을 활성화하면
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold text-dimmed">fullscreen</span> 속성을 활성화하면
             화면 전체를 덮는 형태의 모달을 표시할 수 있습니다.<br>
             모바일 환경이나 대형 폼, 상세 페이지 표시 시 유용합니다.
           </p>

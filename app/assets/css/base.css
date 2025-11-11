@@ -36,10 +36,10 @@ html {
   --ui-warning: var(--color-amber-400);
   --ui-error: var(--color-orange-800);
 
-  --ui-text-dimmed: var(--color-zinc-500);
-  --ui-text-muted: var(--color-zinc-400);
-  --ui-text-toned: var(--color-zinc-300);
   --ui-text: var(--color-neutral-200);
   --ui-text-highlighted: var(--color-white);
   --ui-text-inverted: var(--color-neutral-900);
+  --ui-text-dimmed:  var(--color-text-100);
+  --ui-text-muted: var(--color-text-300);
+  --ui-text-toned: var(--color-text-500);
 }

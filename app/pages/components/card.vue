@@ -12,11 +12,11 @@
           <h2 class="text-xl font-semibold mb-4">
             1. Variant
           </h2>
-          <p class="text-gray-500 mb-6">
-            카드(<span class="font-semibold">variant</span>) 속성을 사용하면 카드의 시각적 스타일을 손쉽게 변경할 수 있습니다.<br>
-            <span class="font-semibold">solid</span>는 배경이 채워진 형태, <span class="font-semibold">outline</span>은 테두리 중심의
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            카드(<span class="font-semibold dark:text-dimmed">variant</span>) 속성을 사용하면 카드의 시각적 스타일을 손쉽게 변경할 수 있습니다.<br>
+            <span class="font-semibold dark:text-dimmed">solid</span>는 배경이 채워진 형태, <span class="font-semibold dark:text-dimmed">outline</span>은 테두리 중심의
             디자인,
-            <span class="font-semibold">soft</span>와 <span class="font-semibold">subtle</span>은 각각 부드럽고 미묘한 톤을
+            <span class="font-semibold dark:text-dimmed">soft</span>와 <span class="font-semibold dark:text-dimmed">subtle</span>은 각각 부드럽고 미묘한 톤을
             제공합니다.<br>
             이를 통해 컨텐츠의 중요도나 시각적 위계를 명확히 표현할 수 있습니다.
           </p>
@@ -75,8 +75,8 @@
           <h2 class="text-xl font-semibold mb-4">
             2. Header & Footer
           </h2>
-          <p class="text-gray-500 mb-6">
-            카드에는 <span class="font-semibold">header</span>와 <span class="font-semibold">footer</span> 슬롯을 제공하여,
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            카드에는 <span class="font-semibold dark:text-dimmed">header</span>와 <span class="font-semibold dark:text-dimmed">footer</span> 슬롯을 제공하여,
             제목 영역이나 추가 액션 버튼을 쉽게 배치할 수 있습니다.<br>
             이를 통해 컨텐츠의 구조를 명확히 하고, 다양한 레이아웃을 구성할 수 있습니다.
           </p>
@@ -99,12 +99,12 @@
                 </div>
               </template>
 
-              <p class="text-gray-600 text-sm mb-4">
+              <p class="text-gray-600 text-sm mb-4 dark:text-dimmed">
                 이 카드는 header와 footer 슬롯을 모두 사용하는 예시입니다.
               </p>
 
               <template #footer>
-                <p class="text-sm text-gray-400">
+                <p class="text-sm text-gray-400 dark:text-muted">
                   Footer 영역에는 날짜, 상태 표시, 버튼 등을 배치할 수 있습니다.
                 </p>
               </template>

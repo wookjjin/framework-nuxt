@@ -37,11 +37,11 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             1. Basic
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">Progress</span>는 현재 진행 상태를
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">Progress</span>는 현재 진행 상태를
             시각적으로 표시하기 위한 컴포넌트입니다.<br>
-            기본 진행도는 <span class="font-semibold">v-model</span>로 제어되며,
-            <span class="font-semibold">max</span> 값에 따라 퍼센트가 계산됩니다.
+            기본 진행도는 <span class="font-semibold dark:text-dimmed">v-model</span>로 제어되며,
+            <span class="font-semibold dark:text-dimmed">max</span> 값에 따라 퍼센트가 계산됩니다.
           </p>
 
           <div class="bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30">
@@ -50,7 +50,7 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
               :max="max"
             />
             <div class="flex justify-between mt-4 items-center">
-              <span class="text-sm text-gray-600">진행도: {{ basicValue }}%</span>
+              <span class="text-sm text-gray-600 dark:text-muted">진행도: {{ basicValue }}%</span>
               <div class="flex gap-2">
                 <UiButton
                   label="-"
@@ -79,10 +79,10 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             2. Color
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">color</span> 속성을 통해 진행바의 색상을
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">color</span> 속성을 통해 진행바의 색상을
             변경할 수 있습니다.<br>
-            각 색상은 프로젝트의 테마 팔레트(<span class="font-semibold">primary, secondary, success, warning, error</span>)를
+            각 색상은 프로젝트의 테마 팔레트(<span class="font-semibold dark:text-dimmed">primary, secondary, success, warning, error</span>)를
             기반으로 합니다.
           </p>
 
@@ -104,10 +104,10 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             3. Size
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">size</span> 속성을 통해 진행바의 높이를
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">size</span> 속성을 통해 진행바의 높이를
             조정할 수 있습니다.<br>
-            사용 가능한 값은 <span class="font-semibold">xs, sm, md, lg, xl</span>
+            사용 가능한 값은 <span class="font-semibold dark:text-dimmed">xs, sm, md, lg, xl</span>
             입니다.
           </p>
 
@@ -129,8 +129,8 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             4. Orientation
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">orientation</span> 속성을 통해
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">orientation</span> 속성을 통해
             진행 방향을 가로(horizontal) 또는 세로(vertical)로 지정할 수 있습니다.
           </p>
 
@@ -158,11 +158,11 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             5. Animation
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">animation</span> 속성은 진행바에 다양한
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">animation</span> 속성은 진행바에 다양한
             시각적 효과를 부여합니다.<br>
             사용 가능한 값은
-            <span class="font-semibold">carousel, carousel-inverse, swing, elastic</span>
+            <span class="font-semibold dark:text-dimmed">carousel, carousel-inverse, swing, elastic</span>
             입니다.
           </p>
 
@@ -183,8 +183,8 @@ const animations: ProgressAnimationType[] = ['carousel', 'carousel-inverse', 'sw
           <h2 class="text-xl font-semibold mb-4">
             6. Inverted
           </h2>
-          <p class="text-gray-500 mb-6">
-            <span class="font-semibold">inverted</span> 속성을 true로 설정하면
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">inverted</span> 속성을 true로 설정하면
             진행 방향이 반대로 표시됩니다.<br>
             주로 색상이 반전된 테마나 어두운 배경에서 시각적 강조를 위해 사용됩니다.
           </p>

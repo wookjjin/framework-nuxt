@@ -65,8 +65,10 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           1. Basic
         </h2>
-        <p class="text-gray-500 mb-6">
-          기본적인 Tabs 예제입니다. 각 탭은 label과 icon, content로 구성됩니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          기본적인 Tabs 예제입니다. 각 탭은 <span class="font-semibold dark:text-dimmed">label</span>과 <span
+            class="font-semibold dark:text-dimmed"
+          >icon, content</span>로 구성됩니다.
         </p>
         <UiTabs :items="basicItems" />
       </section>
@@ -76,8 +78,8 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           2. Color
         </h2>
-        <p class="text-gray-500 mb-6">
-          color 속성을 사용하여 탭의 색상을 변경할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">color</span> 속성을 사용하여 탭의 색상을 변경할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-6">
           <UiTabs
@@ -123,8 +125,8 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           3. Variant
         </h2>
-        <p class="text-gray-500 mb-6">
-          variant 속성으로 Tabs의 스타일(모양)을 변경할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">variant</span> 속성으로 Tabs의 스타일(모양)을 변경할 수 있습니다.
         </p>
         <div class="flex flex-col gap-4">
           <UiTabs
@@ -144,8 +146,8 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           4. Size
         </h2>
-        <p class="text-gray-500 mb-6">
-          size 속성으로 탭 버튼의 크기를 조절할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">size</span> 속성으로 탭 버튼의 크기를 조절할 수 있습니다.
         </p>
         <div class="flex flex-wrap gap-6">
           <UiTabs
@@ -170,8 +172,10 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           5. Orientation
         </h2>
-        <p class="text-gray-500 mb-6">
-          orientation을 "vertical"로 설정하면 세로형 탭으로 변경됩니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">orientation</span>을 <span
+            class="font-semibold dark:text-dimmed"
+          >"vertical"</span>로 설정하면 세로형 탭으로 변경됩니다.
         </p>
         <div class="flex gap-8">
           <UiTabs
@@ -186,13 +190,13 @@ const state = reactive({
         <h2 class="text-xl font-semibold mb-4">
           6. Dynamic Slot
         </h2>
-        <p class="text-gray-500 mb-6">
-          slot 속성을 지정하면 탭마다 고유한 콘텐츠를 개별 슬롯으로 렌더링할 수 있습니다.
+        <p class="text-gray-500 mb-6 dark:text-muted">
+          <span class="font-semibold dark:text-dimmed">slot</span> 속성을 지정하면 탭마다 고유한 콘텐츠를 개별 슬롯으로 렌더링할 수 있습니다.
         </p>
 
         <UiTabs :items="formItems">
           <template #account="{ item }">
-            <p class="text-gray-600 mb-4">
+            <p class="text-gray-600 mb-4 dark:text-muted">
               {{ item.description }}
             </p>
             <UForm

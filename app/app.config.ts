@@ -3,6 +3,7 @@ import alert from '~/theme/alert'
 import container from '~/theme/container'
 import contentToc from '~/theme/contentToc'
 import navigationMenu from '~/theme/navigation'
+import separator from '~/theme/separator'
 
 export default defineAppConfig({
   theme: {
@@ -13,6 +14,7 @@ export default defineAppConfig({
     accordion: accordion(),
     navigationMenu: navigationMenu(),
     contentToc: contentToc(),
+    separator: separator(),
   },
   toc: {
     title: 'On this Page',
