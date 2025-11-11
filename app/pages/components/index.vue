@@ -23,7 +23,7 @@ const components = [
     />
 
     <div class="flex-1 overflow-y-auto">
-      <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-6xl mx-6 px-6">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-6">
           <NuxtLink
             v-for="(component, index) in components"
