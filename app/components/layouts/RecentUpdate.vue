@@ -23,22 +23,28 @@
           <div
             class="group relative flex items-center overflow-hidden gap-(--gap) [--gap:--spacing(16)] [--duration:20s] before:absolute before:pointer-events-none before:content-[&quot;&quot;] before:z-2 before:from-default before:to-transparent after:absolute after:pointer-events-none after:content-[&quot;&quot;] after:z-2 after:from-default after:to-transparent flex-row before:inset-y-0 before:left-0 before:h-full before:w-1/3 before:bg-linear-to-r after:inset-y-0 after:right-0 after:h-full after:w-1/3 after:bg-linear-to-l backface-hidden mt-6"
           >
-            <div class="flex animate-marquee space-x-12">
-              <div
-                v-for="n in 6"
-                :key="`logo1-${n}`"
-                class="h-12 flex items-center justify-center text-toned font-semibold"
-              >
-                {{ n }}
-              </div>
-              <div
-                v-for="n in 6"
-                :key="`logo2-${n}`"
-                class="h-12 flex items-center justify-center text-toned font-semibold"
-              >
-                {{ n }}
-              </div>
-            </div>
+            <UMarquee>
+              <UIcon
+                name="i-simple-icons-vuedotjs"
+                class="size-6 shrink-0"
+              />
+              <UIcon
+                name="i-simple-icons-nuxt"
+                class="size-6 shrink-0"
+              />
+              <UIcon
+                name="i-simple-icons-typescript"
+                class="size-6 shrink-0"
+              />
+              <UIcon
+                name="i-simple-icons-nodedotjs"
+                class="size-6 shrink-0"
+              />
+              <UIcon
+                name="i-simple-icons-github"
+                class="size-6 shrink-0"
+              />
+            </UMarquee>
           </div>
         </div>
 
@@ -112,21 +118,5 @@
 </template>
 
 <style>
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  /* 내용 크기만큼 */
-  animation: marquee 20s linear infinite;
-  /* 속도 조절 가능 */
-}
 </style>
