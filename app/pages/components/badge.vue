@@ -51,108 +51,128 @@ const avatarBadges: BadgeProps[] = [
   <div class="h-full flex flex-col">
     <PageTitle page-title="Badge" />
 
-    <div class="flex flex-col mx-6 px-6 gap-10 overflow-y-auto">
-      <!-- Basic Variants -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          1. Variants
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          기본적인 Badge의 <span class="font-semibold dark:text-dimmed">color</span> 및 <span class="font-semibold dark:text-dimmed">variant</span> 조합 예제입니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in basicBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+    <div class="flex-1 overflow-y-auto pb-8">
+      <div class="max-w-6xl flex flex-col gap-8">
+        <!-- Basic Variants -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            1. Variants
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            기본적인 Badge의 <span class="font-semibold dark:text-dimmed">color</span> 및 <span
+              class="font-semibold dark:text-dimmed"
+            >variant</span> 조합 예제입니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in basicBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
 
-      <!-- Square Badges -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          2. Square
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          <span class="font-semibold dark:text-dimmed">square</span> 속성을 사용하여 정사각형 형태로 표시할 수 있습니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in squareBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+        <!-- Square Badges -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            2. Square
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">square</span> 속성을 사용하여 정사각형 형태로 표시할 수 있습니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in squareBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
 
-      <!-- Icon Badges -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          3. Icon
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          <span class="font-semibold dark:text-dimmed">icon</span> 속성을 통해 아이콘을 함께 표시할 수 있습니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in iconBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+        <!-- Icon Badges -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            3. Icon
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">icon</span> 속성을 통해 아이콘을 함께 표시할 수 있습니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in iconBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
 
-      <!-- Leading Icon -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          4. Leading Icon
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          <span class="font-semibold dark:text-dimmed">leading</span>과 <span class="font-semibold dark:text-dimmed">leadingIcon</span> 속성을 사용해 텍스트 앞에 아이콘을 배치할 수 있습니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in leadingBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+        <!-- Leading Icon -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            4. Leading Icon
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">leading</span>과 <span
+              class="font-semibold dark:text-dimmed"
+            >leadingIcon</span> 속성을 사용해 텍스트 앞에 아이콘을 배치할 수 있습니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in leadingBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
 
-      <!-- Trailing Icon -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          5. Trailing Icon
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          <span class="font-semibold dark:text-dimmed">trailing</span>과 <span class="font-semibold dark:text-dimmed">trailingIcon</span> 속성을 사용해 텍스트 뒤에 아이콘을 배치할 수 있습니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in trailingBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+        <!-- Trailing Icon -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            5. Trailing Icon
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">trailing</span>과 <span
+              class="font-semibold dark:text-dimmed"
+            >trailingIcon</span> 속성을 사용해 텍스트 뒤에 아이콘을 배치할 수 있습니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in trailingBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
 
-      <!-- Avatar Badge -->
-      <section>
-        <h2 class="text-xl font-semibold mb-4">
-          6. Avatar
-        </h2>
-        <p class="text-gray-500 mb-6 dark:text-muted">
-          <span class="font-semibold dark:text-dimmed">avatar</span> 속성을 사용하여 사용자 아바타와 함께 표시할 수 있습니다.
-        </p>
-        <div class="flex flex-wrap gap-3">
-          <UiBadge
-            v-for="(badge, i) in avatarBadges"
-            :key="i"
-            v-bind="badge"
-          />
-        </div>
-      </section>
+        <!-- Avatar Badge -->
+        <section>
+          <h2 class="text-xl font-semibold mb-4">
+            6. Avatar
+          </h2>
+          <p class="text-gray-500 mb-6 dark:text-muted">
+            <span class="font-semibold dark:text-dimmed">avatar</span> 속성을 사용하여 사용자 아바타와 함께 표시할 수 있습니다.
+          </p>
+          <div
+            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+          >
+            <UiBadge
+              v-for="(badge, i) in avatarBadges"
+              :key="i"
+              v-bind="badge"
+            />
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </template>

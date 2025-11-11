@@ -22,7 +22,7 @@ const components = [
       :is-previous="false"
     />
 
-    <div class="flex-1 overflow-y-auto">
+    <div class="flex-1 overflow-y-auto pb-8">
       <div class="max-w-8xl">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-6">
           <NuxtLink

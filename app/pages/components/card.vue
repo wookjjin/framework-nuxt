@@ -5,8 +5,8 @@
   <div class="h-full flex flex-col">
     <PageTitle page-title="Card" />
 
-    <div class="flex-1 overflow-y-auto">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col gap-8">
+    <div class="flex-1 overflow-y-auto pb-8">
+      <div class="max-w-6xl flex flex-col gap-8">
         <!-- Section: Variant -->
         <section>
           <h2 class="text-xl font-semibold mb-4">
