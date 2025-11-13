@@ -34,7 +34,7 @@ const components = [
           >
             <div class="flex items-center justify-between mb-3">
               <h2
-                class="text-lg font-semibold text-gray-800 transition-colors group-hover:text-blue-600  dark:text-highlighted"
+                class="text-lg font-semibold text-gray-800 transition-colors group-hover:text-primary dark:group-hover:text-primary dark:text-highlighted"
               >
                 {{ component.name }}
               </h2>
