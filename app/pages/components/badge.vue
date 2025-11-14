@@ -64,7 +64,7 @@ const avatarBadges: BadgeProps[] = [
             >variant</span> 조합 예제입니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in basicBadges"
@@ -80,10 +80,10 @@ const avatarBadges: BadgeProps[] = [
             2. Square
           </h2>
           <p class="text-gray-500 mb-6 dark:text-muted">
-            <span class="font-semibold dark:text-dimmed">square</span> 속성을 사용하여 정사각형 형태로 표시할 수 있습니다.
+            <span class="font-semibold dark:text-dimmed">square</span> 속성을 사용하여 모든 면에 동일한 패딩을 적용하여 표시할 수 있습니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in squareBadges"
@@ -102,7 +102,7 @@ const avatarBadges: BadgeProps[] = [
             <span class="font-semibold dark:text-dimmed">icon</span> 속성을 통해 아이콘을 함께 표시할 수 있습니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in iconBadges"
@@ -123,7 +123,7 @@ const avatarBadges: BadgeProps[] = [
             >leadingIcon</span> 속성을 사용해 텍스트 앞에 아이콘을 배치할 수 있습니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in leadingBadges"
@@ -144,7 +144,7 @@ const avatarBadges: BadgeProps[] = [
             >trailingIcon</span> 속성을 사용해 텍스트 뒤에 아이콘을 배치할 수 있습니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in trailingBadges"
@@ -163,7 +163,7 @@ const avatarBadges: BadgeProps[] = [
             <span class="font-semibold dark:text-dimmed">avatar</span> 속성을 사용하여 사용자 아바타와 함께 표시할 수 있습니다.
           </p>
           <div
-            class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
+            class="flex gap-6 bg-white border border-gray-200 rounded-xl p-6 dark:bg-elevated/40 dark:border-default/30"
           >
             <UiBadge
               v-for="(badge, i) in avatarBadges"
